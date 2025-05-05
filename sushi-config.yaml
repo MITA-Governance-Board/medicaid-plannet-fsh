@@ -1,0 +1,92 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their meanings,      │
+# │  see: https://fshschool.org/docs/sushi/configuration/                                          │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.us.medicaid.plannet
+canonical: http://hl7.org/fhir/us/medicaid-plannet
+name: MedicaidPlanNet
+title: "Medicaid Provider Directory Implementation Guide"
+description: "FHIR Implementation Guide for Medicaid Provider Directory functionality based on Da Vinci Plan-Net"
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2025+
+releaseLabel: CI Build
+pages:
+  index.md:
+    title: Home
+  mita-overview.md:
+    title: MITA Overview
+  cms-interop-rule.md:
+    title: CMS Interoperability Rule
+  provider-directory-resources.md:
+    title: Provider Directory Resources
+  examples.md:
+    title: Examples
+  downloads.md:
+    title: Downloads
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Background:
+    MITA 3.0 Overview: mita-overview.html
+    CMS Interoperability Rule: cms-interop-rule.html
+  Specification:
+    Provider Directory Resources: provider-directory-resources.html
+    Profiles: artifacts.html#structures-resource-profiles
+    Extensions: artifacts.html#structures-extension-definitions
+    Terminology: artifacts.html#terminology-value-sets
+  Examples: examples.html
+  Downloads: downloads.html
+
+# ╭───────────────────────────────────────────Dependencies────────────────────────────────────────╮
+# │  To add a dependency on another implementation guide, add a new "dependsOn" entry.            │
+# ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+dependencies:
+  hl7.fhir.us.davinci-pdex-plan-net:
+    uri: http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1
+    version: 1.1.0
+  hl7.fhir.us.core:
+    uri: http://hl7.org/fhir/us/core/STU5.0.1
+    version: 5.0.1
+
+# ╭────────────────────────────────────────────Parameters───────────────────────────────────────────╮
+# │  The parameters property represents IG.definition.parameter. Rather than a list of code/value   │
+# │  pairs (as in the ImplementationGuide resource), the code is the YAML key. If a parameter      │
+# │  allows repeating values, the value in the YAML should be a sequence/array. For a complete     │
+# │  list of supported parameters, see the IG Parameters table in the SUSHI documentation.         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+parameters:
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+  #path-expansion-params: expansion-parameters.json
+  show-inherited-invariants: false
+  usage-stats-opt-out: true
+  excludexml: true
+  excludejsn: false
+  excludettl: true
+  excludemap: true
+  active-tables: false
+
+# ╭────────────────────────────────────────────Resources────────────────────────────────────────────╮
+# │  The resources property corresponds to IG.definition.resource. SUSHI can auto-generate          │
+# │  resources based on FSH definitions and/or information in the FSH project. If a resource        │
+# │  entry has a profile, it will be used as the logical URL (and optionally the canonical URL)     │
+# │  for the resource. If a resource entry does not have a profile, it will be added to the         │
+# │  resource list without any profile. If the resource entry has a profile that is defined in      │
+# │  the FSH project, it will be used as the logical URL and the canonical URL for the resource.    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# resources:
+#   Patient/example:
+#     name: Patient Example
+#     description: An example Patient
+#     exampleBoolean: true

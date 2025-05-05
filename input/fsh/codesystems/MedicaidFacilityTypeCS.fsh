@@ -1,0 +1,18 @@
+CodeSystem: MedicaidFacilityTypeCS
+Id: medicaid-facility-type-cs
+Title: "Medicaid Facility Type Code System"
+Description: "Code system for Medicaid facility types."
+* #hospital "Hospital" "A healthcare institution providing patient treatment with specialized staff and equipment."
+* #clinic "Clinic" "A healthcare facility that is primarily devoted to the care of outpatients."
+* #group-practice "Group Practice" "A group of healthcare providers who work together and share resources."
+* #pharmacy "Pharmacy" "A facility where medicines are prepared and dispensed."
+* #laboratory "Laboratory" "A facility that performs diagnostic tests."
+* #imaging-center "Imaging Center" "A facility that provides diagnostic imaging services."
+* #home-health-agency "Home Health Agency" "An organization that provides healthcare services in the patient's home."
+* #nursing-facility "Nursing Facility" "A facility that provides nursing care and related services."
+* #behavioral-health "Behavioral Health" "A facility that provides mental health and substance abuse services."
+* #ambulatory-surgical-center "Ambulatory Surgical Center" "A facility that provides same-day surgical care."
+* #federally-qualified-health-center "Federally Qualified Health Center" "A community-based healthcare provider that receives federal funds to provide primary care services in underserved areas."
+* #rural-health-clinic "Rural Health Clinic" "A clinic located in a rural, medically underserved area."
+* #community-mental-health-center "Community Mental Health Center" "A facility that provides mental health services to a defined community."
+* #other "Other" "Other type of facility not listed."
