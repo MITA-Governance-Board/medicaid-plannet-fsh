@@ -5,7 +5,7 @@ Profile: MedicaidOrganization
 Parent: PlannetOrganization
 Id: medicaid-organization
 Title: "Medicaid Organization"
-Description: "Profile for an organization in a Medicaid provider directory, extending the Da Vinci Plan-Net Organization profile."
+Description: "Profile for an organization in a Medicaid provider directory, extending the Da Vinci Plan-Net Organization profile and incorporating elements from the FAST NDH Implementation Guide."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2025-05-02"
@@ -40,6 +40,9 @@ Description: "Profile for an organization in a Medicaid provider directory, exte
 // Require contact information
 * telecom 1..*
 * address 1..*
+
+// Add NDH-specific elements
+* contact 0..*
 
 // Require active status
 * active 1..1

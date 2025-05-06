@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Implementation Guide defines a set of FHIR profiles for representing provider directory information in the Medicaid context. These profiles are based on the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) but have been adapted to meet the specific requirements of Medicaid provider directories as defined in the Medicaid Information Technology Architecture (MITA) 3.0 and the CMS Interoperability and Patient Access API Rule.
+This Implementation Guide defines a set of FHIR profiles for representing provider directory information in the Medicaid context. These profiles are based on the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) and the [FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide](http://hl7.org/fhir/us/ndh/STU1/), but have been adapted to meet the specific requirements of Medicaid provider directories as defined in the Medicaid Information Technology Architecture (MITA) 3.0 and the CMS Interoperability and Patient Access API Rule.
 
 ## Core Resources
 
@@ -126,7 +126,7 @@ graph TD
 
 ## Medicaid-Specific Extensions
 
-This Implementation Guide defines several Medicaid-specific extensions to capture information that is not covered by the base FHIR resources or the Da Vinci Plan-Net profiles:
+This Implementation Guide defines several Medicaid-specific extensions to capture information that is not covered by the base FHIR resources, the Da Vinci Plan-Net profiles, or the FAST NDH profiles:
 
 ### Provider Extensions
 
@@ -146,6 +146,35 @@ This Implementation Guide defines several Medicaid-specific extensions to captur
 - **medicaid-network-type**: The type of Medicaid network (e.g., Fee-for-Service, Managed Care)
 - **medicaid-network-adequacy**: Metrics related to network adequacy requirements
 - **medicaid-service-area**: The geographic area covered by the network
+
+## Alignment with FAST NDH
+
+This Implementation Guide aligns with the FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide in the following ways:
+
+### Shared Resources and Profiles
+
+Where appropriate, this IG leverages profiles defined in the NDH IG, particularly for:
+
+- **Verification and Validation**: Incorporating NDH verification extensions and patterns to support Medicaid provider verification processes
+- **Accessibility Information**: Using NDH accessibility extensions to document provider accessibility features
+- **Electronic Service Information**: Leveraging NDH endpoint profiles for electronic service information
+- **Healthcare Services**: Adopting NDH healthcare service patterns for describing Medicaid-covered services
+
+### Enhanced Search Capabilities
+
+This IG incorporates the NDH search parameters and capabilities to enable more robust provider directory queries, including:
+
+- Geospatial search capabilities
+- Advanced filtering by provider characteristics
+- Network and accessibility-based searches
+
+### Directory Validation
+
+This IG adopts the NDH validation patterns to ensure data quality and currency, including:
+
+- Attestation tracking
+- Last verification date tracking
+- Data source documentation
 
 ## Value Sets
 

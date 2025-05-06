@@ -7,7 +7,7 @@ id: hl7.fhir.us.medicaid.plannet
 canonical: http://hl7.org/fhir/us/medicaid-plannet
 name: MedicaidPlanNet
 title: "Medicaid Provider Directory Implementation Guide"
-description: "FHIR Implementation Guide for Medicaid Provider Directory functionality based on Da Vinci Plan-Net"
+description: "FHIR Implementation Guide for Medicaid Provider Directory functionality based on Da Vinci Plan-Net and FAST NDH"
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
@@ -51,6 +51,9 @@ dependencies:
   hl7.fhir.us.davinci-pdex-plan-net:
     uri: http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1
     version: 1.1.0
+  hl7.fhir.us.ndh:
+    uri: http://hl7.org/fhir/us/ndh/STU1
+    version: 1.0.0
   hl7.fhir.us.core:
     uri: http://hl7.org/fhir/us/core/STU5.0.1
     version: 5.0.1

@@ -5,7 +5,7 @@ Profile: MedicaidPractitioner
 Parent: PlannetPractitioner
 Id: medicaid-practitioner
 Title: "Medicaid Practitioner"
-Description: "Profile for a practitioner in a Medicaid provider directory, extending the Da Vinci Plan-Net Practitioner profile."
+Description: "Profile for a practitioner in a Medicaid provider directory, extending the Da Vinci Plan-Net Practitioner profile and incorporating elements from the FAST NDH Implementation Guide."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2025-05-02"
@@ -40,10 +40,14 @@ Description: "Profile for a practitioner in a Medicaid provider directory, exten
 * qualification.issuer 1..1
 * qualification.period 1..1
 * qualification.period.start 1..1
+// No NDH-specific qualification extensions
 
 // Require contact information
 * telecom 1..*
 * address 1..*
+
+// Add NDH-specific elements
+* communication 0..*
 
 // Require active status
 * active 1..1
