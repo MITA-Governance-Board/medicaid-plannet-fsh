@@ -85,6 +85,21 @@ The FHIR resources and profiles defined in this IG align with the MITA informati
 - Network affiliations (Network, OrganizationAffiliation)
 - Electronic endpoints (Endpoint)
 
+#### Leveraging Industry Standard Code Systems
+
+This IG enhances MITA alignment by leveraging industry standard code systems:
+
+- **NUCC Provider Taxonomy**: Incorporated into MedicaidProviderTypeVS for standardized provider classification
+- **CMS Place of Service Codes**: Incorporated into MedicaidFacilityTypeVS for standardized facility classification
+- **HCPCS**: Referenced for service categories to align with standard billing practices
+
+#### Concept Maps for Interoperability
+
+To facilitate interoperability between Medicaid-specific codes and industry standards, this IG provides concept maps:
+
+- **MedicaidToNUCCProviderTypeMap**: Enables translation between Medicaid provider types and NUCC taxonomy codes
+- **MedicaidToCMSFacilityTypeMap**: Enables translation between Medicaid facility types and CMS Place of Service codes
+
 ### Technical Architecture Alignment
 
 This IG supports the MITA technical architecture by:
@@ -93,6 +108,8 @@ This IG supports the MITA technical architecture by:
 - Supporting standards-based interoperability
 - Enabling service-oriented architecture through FHIR resources
 - Supporting business rules through profile constraints
+- Providing enhanced search capabilities through standardized search parameters
+- Implementing version management for code systems to support evolution over time
 
 ## MITA Seven Standards and Conditions
 

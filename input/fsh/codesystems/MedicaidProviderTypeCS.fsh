@@ -2,6 +2,11 @@ CodeSystem: MedicaidProviderTypeCS
 Id: medicaid-provider-type-cs
 Title: "Medicaid Provider Type Code System"
 Description: "Code system for Medicaid provider types."
+* ^version = "1.0.0"
+* ^experimental = false
+* ^date = "2025-05-06"
+* ^caseSensitive = true
+* ^content = #complete
 * #physician "Physician" "A doctor of medicine or osteopathy."
 * #nurse-practitioner "Nurse Practitioner" "A registered nurse with advanced education and clinical training."
 * #physician-assistant "Physician Assistant" "A healthcare professional who practices medicine under the supervision of a physician."

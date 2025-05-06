@@ -180,11 +180,26 @@ This IG adopts the NDH validation patterns to ensure data quality and currency, 
 
 This Implementation Guide defines several value sets to support the Medicaid-specific aspects of provider directories:
 
-- **MedicaidProviderTypeVS**: Types of providers recognized by Medicaid programs
+- **MedicaidProviderTypeVS**: Types of providers recognized by Medicaid programs, including NUCC Provider Taxonomy codes
 - **MedicaidEnrollmentStatusVS**: Possible enrollment statuses for Medicaid providers
 - **MedicaidServiceCategoryVS**: Categories of services covered by Medicaid
 - **MedicaidNetworkTypeVS**: Types of Medicaid networks
-- **MedicaidFacilityTypeVS**: Types of facilities recognized by Medicaid programs
+- **MedicaidFacilityTypeVS**: Types of facilities recognized by Medicaid programs, including CMS Place of Service codes
+
+### External Code Systems
+
+In addition to Medicaid-specific code systems, this Implementation Guide leverages established external code systems:
+
+- **NUCC Provider Taxonomy**: Standard provider specialty codes from the National Uniform Claim Committee
+- **CMS Place of Service Codes**: Standard facility type codes from the Centers for Medicare & Medicaid Services
+- **HCPCS**: Healthcare Common Procedure Coding System for service categories
+
+## Concept Maps
+
+This Implementation Guide provides concept maps to facilitate interoperability between Medicaid-specific codes and industry-standard codes:
+
+- **MedicaidToNUCCProviderTypeMap**: Maps Medicaid provider types to NUCC Provider Taxonomy codes
+- **MedicaidToCMSFacilityTypeMap**: Maps Medicaid facility types to CMS Place of Service codes
 
 ## Search Parameters
 
@@ -192,6 +207,7 @@ This Implementation Guide defines several search parameters to support finding p
 
 - **medicaid-provider-id**: Search for providers by their Medicaid Provider Identifier
 - **medicaid-enrollment-status**: Search for providers by their Medicaid enrollment status
-- **medicaid-service-category**: Search for providers by the Medicaid service categories they offer
+- **medicaid-provider-type**: Search for providers by their Medicaid provider type
+- **medicaid-facility-type**: Search for organizations by their Medicaid facility type
 - **medicaid-network-type**: Search for providers by the type of Medicaid network they participate in
 - **accepting-new-patients**: Search for providers who are accepting new Medicaid patients

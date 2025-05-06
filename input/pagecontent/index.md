@@ -12,8 +12,11 @@ This IG addresses the need for standardized provider directory data exchange in 
 
 1. Defining FHIR profiles for key provider directory resources based on the Da Vinci Plan-Net IG and FAST NDH IG
 2. Aligning with MITA 3.0 business processes and data requirements
-3. Supporting compliance with the CMS Interoperability and Patient Access API Rule
-4. Providing implementation guidance for Medicaid agencies and their technology partners
+3. Leveraging industry standard code systems (NUCC, CMS Place of Service, HCPCS) alongside Medicaid-specific codes
+4. Providing concept maps between Medicaid-specific codes and industry standards to enhance interoperability
+5. Supporting compliance with the CMS Interoperability and Patient Access API Rule
+6. Implementing version management for code systems to support evolution over time
+7. Providing implementation guidance for Medicaid agencies and their technology partners
 
 ## Scope
 

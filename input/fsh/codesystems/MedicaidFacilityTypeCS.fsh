@@ -2,6 +2,11 @@ CodeSystem: MedicaidFacilityTypeCS
 Id: medicaid-facility-type-cs
 Title: "Medicaid Facility Type Code System"
 Description: "Code system for Medicaid facility types."
+* ^version = "1.0.0"
+* ^experimental = false
+* ^date = "2025-05-06"
+* ^caseSensitive = true
+* ^content = #complete
 * #hospital "Hospital" "A healthcare institution providing patient treatment with specialized staff and equipment."
 * #clinic "Clinic" "A healthcare facility that is primarily devoted to the care of outpatients."
 * #group-practice "Group Practice" "A group of healthcare providers who work together and share resources."
