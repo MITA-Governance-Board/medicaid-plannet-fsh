@@ -15,17 +15,11 @@ Description: "Profile for an organization in a Medicaid provider directory, exte
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 
-// Require at least one identifier with a Medicaid Provider Identifier extension
+// Require at least one identifier
 * identifier 1..*
-// * identifier ^slicing.discriminator.type = #pattern
-// * identifier ^slicing.discriminator.path = "extension.url"
-// * identifier ^slicing.rules = #open
-// * identifier ^slicing.description = "Slice based on the identifier.extension pattern"
 
-// * identifier contains medicaidProviderId 0..1
-// * identifier[medicaidProviderId].extension contains MedicaidProviderIdentifier named medicaidProviderIdentifier 1..1
-// * identifier[medicaidProviderId] ^short = "Medicaid Provider Identifier"
-// * identifier[medicaidProviderId] ^definition = "A unique identifier assigned to the organization by a state Medicaid program."
+// Add Medicaid Provider Identifier extension
+* extension contains MedicaidProviderIdentifier named medicaidProviderIdentifier 0..1
 
 // Add Medicaid-specific extensions
 * extension contains

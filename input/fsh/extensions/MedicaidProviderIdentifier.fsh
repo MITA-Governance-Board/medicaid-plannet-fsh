@@ -8,4 +8,3 @@ Description: "A unique identifier assigned to a provider by a state Medicaid pro
 * valueIdentifier 1..1
 * valueIdentifier.system 1..1
 * valueIdentifier.value 1..1
-

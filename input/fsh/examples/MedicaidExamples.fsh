@@ -10,12 +10,12 @@ Description: "Example of a practitioner enrolled in Medicaid"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-practitioner"
 * meta.lastUpdated = "2025-05-02T12:00:00Z"
-* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[NPI].value = "1122334455"
-// * identifier[medicaidProviderId].system = "http://example.org/state-medicaid/provider-id"
-// * identifier[medicaidProviderId].value = "MCD123456"
-// * identifier[medicaidProviderId].extension[medicaidProviderIdentifier].valueIdentifier.system = "http://example.org/state-medicaid/provider-id"
-// * identifier[medicaidProviderId].extension[medicaidProviderIdentifier].valueIdentifier.value = "MCD123456"
+* identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[0].value = "1122334455"
+* identifier[1].system = "http://example.org/state-medicaid/provider-id"
+* identifier[1].value = "MCD123456"
+* extension[medicaidProviderIdentifier].valueIdentifier.system = "http://example.org/state-medicaid/provider-id"
+* extension[medicaidProviderIdentifier].valueIdentifier.value = "MCD123456"
 * active = true
 * name.family = "Smith"
 * name.given = "John"
@@ -56,12 +56,12 @@ Description: "Example of an organization enrolled in Medicaid"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-organization"
 * meta.lastUpdated = "2025-05-02T12:00:00Z"
-* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[NPI].value = "9988776655"
-// * identifier[medicaidProviderId].system = "http://example.org/state-medicaid/provider-id"
-// * identifier[medicaidProviderId].value = "MCD789012"
-// * identifier[medicaidProviderId].extension[medicaidProviderIdentifier].valueIdentifier.system = "http://example.org/state-medicaid/provider-id"
-// * identifier[medicaidProviderId].extension[medicaidProviderIdentifier].valueIdentifier.value = "MCD789012"
+* identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[0].value = "9988776655"
+* identifier[1].system = "http://example.org/state-medicaid/provider-id"
+* identifier[1].value = "MCD789012"
+* extension[medicaidProviderIdentifier].valueIdentifier.system = "http://example.org/state-medicaid/provider-id"
+* extension[medicaidProviderIdentifier].valueIdentifier.value = "MCD789012"
 * active = true
 * type = MedicaidFacilityTypeCS#clinic "Clinic"
 * name = "Anytown Medical Group"
@@ -104,7 +104,7 @@ Description: "Example of a Medicaid managed care network"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-network"
 * meta.lastUpdated = "2025-05-02T12:00:00Z"
-* partOf = Reference(Organization/example-parent-organization)
+* partOf = Reference(ExampleParentOrganization)
 * identifier[0].system = "http://example.org/state-medicaid/network-id"
 * identifier[0].value = "MCO-NETWORK-001"
 * active = true
@@ -160,7 +160,7 @@ Usage: #example
 // Example 5: Medicaid Practitioner Role
 
 Instance: MedicaidPractitionerRoleExample1
-InstanceOf: PractitionerRole
+InstanceOf: MedicaidPractitionerRole
 Title: "Example Medicaid Practitioner Role"
 Description: "Example of a practitioner role in a Medicaid organization"
 Usage: #example
@@ -194,7 +194,7 @@ Usage: #example
 // Example 6: Medicaid Location
 
 Instance: MedicaidLocationExample1
-InstanceOf: Location
+InstanceOf: MedicaidLocation
 Title: "Example Medicaid Provider Location"
 Description: "Example of a location where Medicaid services are provided"
 Usage: #example

@@ -18,10 +18,24 @@ pages:
     title: Home
   mita-overview.md:
     title: MITA Overview
+  mita-implementation.md:
+    title: MITA Implementation Guidance
   cms-interop-rule.md:
     title: CMS Interoperability Rule
   provider-directory-resources.md:
     title: Provider Directory Resources
+  state-customization.md:
+    title: State Customization Framework
+  data-quality.md:
+    title: Data Quality Framework
+  security-privacy.md:
+    title: Security and Privacy Considerations
+  versioning-strategy.md:
+    title: Versioning Strategy
+  transition-strategy.md:
+    title: Transition Strategy
+  testing-framework.md:
+    title: Testing Framework
   examples.md:
     title: Examples
   downloads.md:
@@ -35,12 +49,20 @@ menu:
   Table of Contents: toc.html
   Background:
     MITA 3.0 Overview: mita-overview.html
+    MITA Implementation Guidance: mita-implementation.html
     CMS Interoperability Rule: cms-interop-rule.html
   Specification:
     Provider Directory Resources: provider-directory-resources.html
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Terminology: artifacts.html#terminology-value-sets
+  Implementation Guidance:
+    State Customization Framework: state-customization.html
+    Data Quality Framework: data-quality.html
+    Security and Privacy Considerations: security-privacy.html
+    Versioning Strategy: versioning-strategy.html
+    Transition Strategy: transition-strategy.html
+    Testing Framework: testing-framework.html
   Examples: examples.html
   Downloads: downloads.html
 
