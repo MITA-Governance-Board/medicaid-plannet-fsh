@@ -1,10 +1,8 @@
-# Versioning Strategy
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides a framework for managing versions of code systems, value sets, profiles, and other artifacts. Effective versioning is essential for maintaining backward compatibility, supporting evolution over time, and ensuring interoperability across systems. This guidance outlines approaches for implementing versioning in FHIR-based provider directories.
 
-## Versioning Principles
+### Versioning Principles
 
 The following principles should guide the implementation of versioning:
 
@@ -14,9 +12,9 @@ The following principles should guide the implementation of versioning:
 4. **Transition Periods**: Provide transition periods for breaking changes to allow systems to adapt.
 5. **Version Negotiation**: Support version negotiation to allow systems to interact using compatible versions.
 
-## Artifact Versioning
+### Artifact Versioning
 
-### Code Systems
+#### Code Systems
 
 Code systems should be versioned using the following approach:
 
@@ -53,7 +51,7 @@ Description: "Code system for Medicaid provider types."
 * #other "Other" "Other type of provider not listed."
 ```
 
-### Value Sets
+#### Value Sets
 
 Value sets should be versioned using the following approach:
 
@@ -82,7 +80,7 @@ Description: "Value set for Medicaid provider types, including Medicaid-specific
 * include codes from system http://nucc.org/provider-taxonomy|2.1.0 where concept is-a #31
 ```
 
-### Profiles
+#### Profiles
 
 Profiles should be versioned using the following approach:
 
@@ -110,7 +108,7 @@ Description: "Profile for a practitioner in a Medicaid provider directory, exten
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 ```
 
-### Extensions
+#### Extensions
 
 Extensions should be versioned using the following approach:
 
@@ -138,7 +136,7 @@ Description: "The current enrollment status of a provider in the Medicaid progra
 * valueCodeableConcept 1..1
 ```
 
-## Implementation Guide Versioning
+### Implementation Guide Versioning
 
 The Implementation Guide itself should be versioned using the following approach:
 
@@ -163,11 +161,11 @@ copyrightYear: 2025+
 releaseLabel: CI Build
 ```
 
-## Version Negotiation
+### Version Negotiation
 
 Systems should support version negotiation to allow interaction using compatible versions. This can be achieved through the following approaches:
 
-### Content Negotiation
+#### Content Negotiation
 
 Systems can use HTTP content negotiation to request specific versions of resources:
 
@@ -177,7 +175,7 @@ Accept: application/fhir+json; fhirVersion=4.0.1
 Accept-Profile: http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-practitioner|0.1.0
 ```
 
-### Version Parameters
+#### Version Parameters
 
 Systems can use version parameters in URLs to request specific versions of resources:
 
@@ -185,7 +183,7 @@ Systems can use version parameters in URLs to request specific versions of resou
 GET /fhir/Practitioner/123?_profile=http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-practitioner|0.1.0
 ```
 
-### Capability Statement
+#### Capability Statement
 
 Systems should document their supported versions in their Capability Statement:
 
@@ -217,7 +215,7 @@ Systems should document their supported versions in their Capability Statement:
 }
 ```
 
-## Deprecation Process
+### Deprecation Process
 
 The deprecation process should include the following steps:
 
@@ -250,9 +248,9 @@ Description: "This profile is deprecated and should no longer be used."
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 ```
 
-## Version Management
+### Version Management
 
-### Version Control
+#### Version Control
 
 All artifacts should be managed in a version control system (e.g., Git) to track changes over time. The version control system should:
 
@@ -262,7 +260,7 @@ All artifacts should be managed in a version control system (e.g., Git) to track
 4. **Support Pull Requests**: Support pull requests for reviewing changes.
 5. **Support Continuous Integration**: Support continuous integration for validating changes.
 
-### Release Management
+#### Release Management
 
 Releases should be managed using the following approach:
 
@@ -272,7 +270,7 @@ Releases should be managed using the following approach:
 4. **Release Communication**: Communicate releases to stakeholders.
 5. **Release Archiving**: Archive releases for future reference.
 
-### Continuous Integration
+#### Continuous Integration
 
 Continuous integration should be used to validate changes and ensure quality:
 
@@ -282,9 +280,9 @@ Continuous integration should be used to validate changes and ensure quality:
 4. **Automated Publishing**: Automatically publish the IG to a web server.
 5. **Automated Notification**: Automatically notify stakeholders of changes.
 
-## Implementation Guidance
+### Implementation Guidance
 
-### Version Identification
+#### Version Identification
 
 Systems should identify the versions of artifacts they support:
 
@@ -294,7 +292,7 @@ Systems should identify the versions of artifacts they support:
 4. **Version Metadata**: Include version information in resource metadata.
 5. **Version Documentation**: Document supported versions in system documentation.
 
-### Version Compatibility
+#### Version Compatibility
 
 Systems should ensure compatibility between versions:
 
@@ -304,7 +302,7 @@ Systems should ensure compatibility between versions:
 4. **Compatibility Validation**: Validate resources against supported versions.
 5. **Compatibility Negotiation**: Negotiate compatible versions with other systems.
 
-### Version Transition
+#### Version Transition
 
 Systems should support transition between versions:
 
@@ -314,9 +312,9 @@ Systems should support transition between versions:
 4. **Transition Support**: Provide support for transitions between versions.
 5. **Transition Monitoring**: Monitor transitions between versions.
 
-## Examples
+### Examples
 
-### Example 1: Code System Versioning
+#### Example 1: Code System Versioning
 
 ```
 CodeSystem: MedicaidProviderTypeCS
@@ -343,7 +341,7 @@ Description: "Code system for Medicaid provider types."
 * #other "Other" "Other type of provider not listed."
 ```
 
-### Example 2: Value Set Versioning
+#### Example 2: Value Set Versioning
 
 ```
 ValueSet: MedicaidProviderTypeVS
@@ -362,7 +360,7 @@ Description: "Value set for Medicaid provider types, including Medicaid-specific
 * include codes from system http://nucc.org/provider-taxonomy|2.1.0 where concept is-a #31
 ```
 
-### Example 3: Profile Versioning
+#### Example 3: Profile Versioning
 
 ```
 Profile: MedicaidPractitioner
@@ -380,7 +378,7 @@ Description: "Profile for a practitioner in a Medicaid provider directory, exten
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 ```
 
-### Example 4: Extension Versioning
+#### Example 4: Extension Versioning
 
 ```
 Extension: MedicaidEnrollmentStatus
@@ -398,7 +396,7 @@ Description: "The current enrollment status of a provider in the Medicaid progra
 * valueCodeableConcept 1..1
 ```
 
-### Example 5: Implementation Guide Versioning
+#### Example 5: Implementation Guide Versioning
 
 ```yaml
 id: hl7.fhir.us.medicaid.plannet
@@ -413,7 +411,7 @@ copyrightYear: 2025+
 releaseLabel: CI Build
 ```
 
-## Conclusion
+### Conclusion
 
 Effective versioning is essential for maintaining backward compatibility, supporting evolution over time, and ensuring interoperability across systems. By implementing a comprehensive versioning strategy, provider directory systems can manage changes to code systems, value sets, profiles, and other artifacts in a way that supports interoperability and minimizes disruption.
 

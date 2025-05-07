@@ -1,16 +1,14 @@
-# Downloads
-
-## Package Downloads
+### Package Downloads
 
 The following packages are available for download:
 
-### Full Implementation Guide
+#### Full Implementation Guide
 
 The full implementation guide, including all narrative, profiles, extensions, value sets, examples, and other artifacts, is available for download:
 
 - [Full Implementation Guide (ZIP)](full-ig.zip)
 
-### FHIR Definitions
+#### FHIR Definitions
 
 The FHIR definitions (profiles, extensions, value sets, etc.) are available for download in the following formats:
 
@@ -18,7 +16,7 @@ The FHIR definitions (profiles, extensions, value sets, etc.) are available for 
 - [JSON Definitions (ZIP)](definitions.json.zip)
 - [Turtle Definitions (ZIP)](definitions.ttl.zip)
 
-### Examples
+#### Examples
 
 The examples used in this implementation guide are available for download:
 
@@ -26,7 +24,7 @@ The examples used in this implementation guide are available for download:
 - [JSON Examples (ZIP)](examples.json.zip)
 - [Turtle Examples (ZIP)](examples.ttl.zip)
 
-## FHIR Shorthand (FSH) Source Files
+### FHIR Shorthand (FSH) Source Files
 
 The FHIR Shorthand (FSH) source files used to create this implementation guide are available for download:
 
@@ -34,13 +32,13 @@ The FHIR Shorthand (FSH) source files used to create this implementation guide a
 
 These files can be used with the SUSHI compiler to generate the FHIR resources used in this implementation guide.
 
-## Implementation Guide Source
+### Implementation Guide Source
 
 The source code for this implementation guide is available on GitHub:
 
 - [GitHub Repository](https://github.com/HL7/medicaid-plannet)
 
-## NPM Package
+### NPM Package
 
 This implementation guide is also available as an NPM package:
 
@@ -53,7 +51,7 @@ dependencies:
   hl7.fhir.us.medicaid.plannet: 0.1.0
 ```
 
-## Validator Pack
+### Validator Pack
 
 The validator pack for this implementation guide is available for download:
 
@@ -61,7 +59,7 @@ The validator pack for this implementation guide is available for download:
 
 This pack can be used with the FHIR Validator to validate resources against the profiles defined in this implementation guide.
 
-## Companion Documents
+### Companion Documents
 
 The following companion documents are available for download:
 
@@ -69,13 +67,13 @@ The following companion documents are available for download:
 - [Medicaid Provider Directory Implementation Guide Technical Specifications (PDF)](medicaid-plannet-technical-specs.pdf)
 - [Medicaid Provider Directory Implementation Guide Implementation Considerations (PDF)](medicaid-plannet-implementation-considerations.pdf)
 
-## Change Log
+### Change Log
 
 A log of changes made in each version of this implementation guide is available:
 
 - [Change Log](change-log.html)
 
-## Previous Versions
+### Previous Versions
 
 Previous versions of this implementation guide are available:
 

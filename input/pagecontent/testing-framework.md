@@ -1,10 +1,8 @@
-# Implementation Testing Framework
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides a framework for testing implementations of FHIR-based provider directories. Thorough testing is essential for ensuring that implementations conform to the IG, function correctly, and meet performance requirements. This guidance outlines approaches for implementing a comprehensive testing framework for Medicaid provider directories.
 
-## Testing Principles
+### Testing Principles
 
 The following principles should guide the implementation of a testing framework:
 
@@ -14,11 +12,11 @@ The following principles should guide the implementation of a testing framework:
 4. **Realistic Scenarios**: Test with realistic scenarios that reflect actual use cases.
 5. **Incremental Approach**: Implement testing incrementally, starting with basic tests and adding more complex tests over time.
 
-## Conformance Testing
+### Conformance Testing
 
 Conformance testing verifies that an implementation conforms to the standards and profiles defined in this IG.
 
-### Resource Validation
+#### Resource Validation
 
 Resource validation tests verify that resources conform to the profiles defined in this IG:
 
@@ -57,7 +55,7 @@ Resource validation tests verify that resources conform to the profiles defined 
    - Implementation updates
    - Documentation updates
 
-### Search Parameter Testing
+#### Search Parameter Testing
 
 Search parameter tests verify that search parameters function correctly:
 
@@ -96,7 +94,7 @@ Search parameter tests verify that search parameters function correctly:
    - Result ordering
    - Result paging
 
-### Operation Testing
+#### Operation Testing
 
 Operation tests verify that operations function correctly:
 
@@ -138,11 +136,11 @@ Operation tests verify that operations function correctly:
    - Rate limiting
    - Input validation
 
-## Functional Testing
+### Functional Testing
 
 Functional testing verifies that an implementation functions correctly in real-world scenarios.
 
-### Use Case Testing
+#### Use Case Testing
 
 Use case tests verify that the implementation supports specific use cases:
 
@@ -181,7 +179,7 @@ Use case tests verify that the implementation supports specific use cases:
    - User preferences
    - User feedback
 
-### Workflow Testing
+#### Workflow Testing
 
 Workflow tests verify that the implementation supports end-to-end workflows:
 
@@ -220,7 +218,7 @@ Workflow tests verify that the implementation supports end-to-end workflows:
    - Conflict resolution
    - Synchronization confirmation
 
-### Integration Testing
+#### Integration Testing
 
 Integration tests verify that the implementation integrates correctly with other systems:
 
@@ -259,7 +257,7 @@ Integration tests verify that the implementation integrates correctly with other
    - Encryption integration
    - Key management integration
 
-### User Acceptance Testing
+#### User Acceptance Testing
 
 User acceptance tests verify that the implementation meets user needs:
 
@@ -298,11 +296,11 @@ User acceptance tests verify that the implementation meets user needs:
    - User confidence
    - User satisfaction
 
-## Performance Testing
+### Performance Testing
 
 Performance testing verifies that an implementation meets performance requirements.
 
-### Load Testing
+#### Load Testing
 
 Load tests verify that the implementation can handle expected loads:
 
@@ -341,7 +339,7 @@ Load tests verify that the implementation can handle expected loads:
    - Contained resources
    - Binary resources
 
-### Stress Testing
+#### Stress Testing
 
 Stress tests verify that the implementation can handle extreme conditions:
 
@@ -380,7 +378,7 @@ Stress tests verify that the implementation can handle extreme conditions:
    - Availability degradation
    - Quality degradation
 
-### Scalability Testing
+#### Scalability Testing
 
 Scalability tests verify that the implementation can scale to meet growing demands:
 
@@ -419,7 +417,7 @@ Scalability tests verify that the implementation can scale to meet growing deman
    - Increasing feature customization
    - Increasing feature automation
 
-### Endurance Testing
+#### Endurance Testing
 
 Endurance tests verify that the implementation can maintain performance over time:
 
@@ -458,7 +456,7 @@ Endurance tests verify that the implementation can maintain performance over tim
    - Resource recovery
    - Service recovery
 
-### Performance Benchmarking
+#### Performance Benchmarking
 
 Performance benchmarks establish baseline performance and track improvements:
 
@@ -497,11 +495,11 @@ Performance benchmarks establish baseline performance and track improvements:
    - Error rate targets
    - Availability targets
 
-## Security Testing
+### Security Testing
 
 Security testing verifies that an implementation meets security requirements.
 
-### Authentication Testing
+#### Authentication Testing
 
 Authentication tests verify that the implementation properly authenticates users:
 
@@ -540,7 +538,7 @@ Authentication tests verify that the implementation properly authenticates users
    - Social login
    - Enterprise authentication
 
-### Authorization Testing
+#### Authorization Testing
 
 Authorization tests verify that the implementation properly authorizes users:
 
@@ -579,7 +577,7 @@ Authorization tests verify that the implementation properly authorizes users:
    - Missing function level access control
    - Forced browsing
 
-### Data Protection Testing
+#### Data Protection Testing
 
 Data protection tests verify that the implementation properly protects data:
 
@@ -618,7 +616,7 @@ Data protection tests verify that the implementation properly protects data:
    - Data archiving
    - Data deletion
 
-### Vulnerability Testing
+#### Vulnerability Testing
 
 Vulnerability tests identify and address security vulnerabilities:
 
@@ -657,7 +655,7 @@ Vulnerability tests identify and address security vulnerabilities:
    - Fuzzing tools
    - Exploitation tools
 
-### Audit Testing
+#### Audit Testing
 
 Audit tests verify that the implementation properly logs and monitors security events:
 
@@ -696,11 +694,11 @@ Audit tests verify that the implementation properly logs and monitors security e
    - Compliance management integration
    - Incident management integration
 
-## Test Automation
+### Test Automation
 
 Test automation improves testing efficiency, consistency, and coverage.
 
-### Automated Testing Tools
+#### Automated Testing Tools
 
 Automated testing tools enable efficient and consistent testing:
 
@@ -739,7 +737,7 @@ Automated testing tools enable efficient and consistent testing:
    - TestLink
    - Azure Test Plans
 
-### Test Scripting
+#### Test Scripting
 
 Test scripts automate test execution and validation:
 
@@ -778,7 +776,7 @@ Test scripts automate test execution and validation:
    - Review
    - Continuous improvement
 
-### Continuous Integration
+#### Continuous Integration
 
 Continuous integration automates testing as part of the development process:
 
@@ -817,7 +815,7 @@ Continuous integration automates testing as part of the development process:
    - Deployment
    - Monitoring
 
-### Test Data Management
+#### Test Data Management
 
 Test data management ensures that tests have appropriate data:
 
@@ -856,7 +854,7 @@ Test data management ensures that tests have appropriate data:
    - Automated cleanup
    - Manual cleanup
 
-### Test Reporting
+#### Test Reporting
 
 Test reporting communicates test results and insights:
 
@@ -895,11 +893,11 @@ Test reporting communicates test results and insights:
    - Test coverage
    - Test recommendations
 
-## Test Environments
+### Test Environments
 
 Test environments provide controlled settings for testing.
 
-### Environment Types
+#### Environment Types
 
 Different environment types support different testing needs:
 
@@ -938,7 +936,7 @@ Different environment types support different testing needs:
    - Proof-of-concept environments
    - Research environments
 
-### Environment Configuration
+#### Environment Configuration
 
 Environment configuration ensures consistent and appropriate settings:
 
@@ -977,7 +975,7 @@ Environment configuration ensures consistent and appropriate settings:
    - Dashboards
    - Reports
 
-### Environment Isolation
+#### Environment Isolation
 
 Environment isolation prevents interference between environments:
 
@@ -1016,7 +1014,7 @@ Environment isolation prevents interference between environments:
    - Service containerization
    - Service orchestration
 
-### Environment Management
+#### Environment Management
 
 Environment management ensures efficient and effective use of environments:
 
@@ -1055,11 +1053,11 @@ Environment management ensures efficient and effective use of environments:
    - Environment usage
    - Environment access
 
-## Test Implementation
+### Test Implementation
 
 Test implementation puts the testing framework into practice.
 
-### Test Planning
+#### Test Planning
 
 Test planning defines the testing approach and scope:
 
@@ -1098,7 +1096,7 @@ Test planning defines the testing approach and scope:
    - Test data
    - Test documentation
 
-### Test Development
+#### Test Development
 
 Test development creates the tests that will be executed:
 
@@ -1137,7 +1135,7 @@ Test development creates the tests that will be executed:
    - Test data
    - Test environments
 
-### Test Execution
+#### Test Execution
 
 Test execution runs the tests and collects results:
 
@@ -1176,7 +1174,7 @@ Test execution runs the tests and collects results:
    - Issue assignment
    - Issue tracking
 
-### Test Analysis
+#### Test Analysis
 
 Test analysis interprets test results and provides insights:
 
@@ -1215,7 +1213,7 @@ Test analysis interprets test results and provides insights:
    - Documentation improvements
    - Skill improvements
 
-### Test Reporting
+#### Test Reporting
 
 Test reporting communicates test results and insights:
 
@@ -1254,9 +1252,9 @@ Test reporting communicates test results and insights:
    - Quality reports
    - Recommendation reports
 
-## Examples
+### Examples
 
-### Example 1: Conformance Testing
+#### Example 1: Conformance Testing
 
 A state Medicaid agency implements conformance testing for its provider directory:
 
@@ -1281,7 +1279,7 @@ A state Medicaid agency implements conformance testing for its provider director
    - Document conformance status for all profiles
    - Generate conformance statements for the implementation
 
-### Example 2: Functional Testing
+#### Example 2: Functional Testing
 
 A state Medicaid agency implements functional testing for its provider directory:
 
@@ -1306,7 +1304,7 @@ A state Medicaid agency implements functional testing for its provider directory
    - Document functional test results
    - Provide feedback for system improvements
 
-### Example 3: Performance Testing
+#### Example 3: Performance Testing
 
 A state Medicaid agency implements performance testing for its provider directory:
 

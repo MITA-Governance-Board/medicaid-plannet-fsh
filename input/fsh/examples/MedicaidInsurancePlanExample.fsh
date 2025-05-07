@@ -31,7 +31,7 @@ Usage: #example
 * contact.telecom[2].use = #work
 * endpoint = Reference(MedicaidEndpointExample1)
 * network = Reference(MedicaidNetworkExample1)
-* coverage.type = http://terminology.hl7.org/CodeSystem/v3-ActCode#EHCPOL "extended healthcare"
+* coverage.type = http://terminology.hl7.org/CodeSystem/coverage-type#medical "Medical Coverage"
 * coverage.benefit[0].type = http://terminology.hl7.org/CodeSystem/insurance-plan-type#medical "Medical"
 * coverage.benefit[0].requirement = "Coverage for medically necessary services as defined by state Medicaid guidelines. Some services may require prior authorization."
 * coverage.benefit[1].type = http://terminology.hl7.org/CodeSystem/insurance-plan-type#drug "Drug"

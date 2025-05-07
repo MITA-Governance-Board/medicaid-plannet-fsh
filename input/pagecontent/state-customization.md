@@ -1,10 +1,8 @@
-# State Customization Framework
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides a framework for state-specific customizations while maintaining core interoperability. Medicaid programs vary significantly from state to state, with different eligibility criteria, provider types, facility classifications, and administrative processes. This framework enables states to extend the core profiles and terminology while preserving the ability to exchange data with other states and federal systems.
 
-## Principles for State Customization
+### Principles for State Customization
 
 When implementing state-specific customizations, the following principles should be applied:
 
@@ -14,9 +12,9 @@ When implementing state-specific customizations, the following principles should
 4. **Document State Variations**: Clearly document state-specific variations in implementation guides and technical documentation.
 5. **Provide Concept Maps**: Create concept maps between state-specific codes and standard codes to facilitate data exchange.
 
-## Extension Patterns
+### Extension Patterns
 
-### State-Specific Extensions
+#### State-Specific Extensions
 
 States can create extensions for state-specific data elements using the following pattern:
 
@@ -43,7 +41,7 @@ Description: "California-specific categorization of Medicaid providers."
 * valueCodeableConcept from CaliforniaMedicaidProviderCategoryVS (required)
 ```
 
-### State-Specific Profiles
+#### State-Specific Profiles
 
 If a state needs to create a state-specific profile, it should extend the core profiles defined in this IG:
 
@@ -70,9 +68,9 @@ Description: "California-specific profile for a practitioner in a Medicaid provi
     CaliforniaMedicaidEnrollmentProgram named enrollmentProgram 0..*
 ```
 
-## Terminology Extensions
+### Terminology Extensions
 
-### State-Specific Code Systems
+#### State-Specific Code Systems
 
 States can create code systems for state-specific codes using the following pattern:
 
@@ -96,7 +94,7 @@ Description: "Code system for California-specific Medicaid provider categories."
 * #cat2 "Category 2" "California provider category 2"
 ```
 
-### State-Specific Value Sets
+#### State-Specific Value Sets
 
 States can create value sets that include both state-specific codes and standard codes:
 
@@ -120,7 +118,7 @@ Description: "Value set for California-specific Medicaid provider categories."
 * include codes from system MedicaidProviderTypeCS
 ```
 
-## Concept Maps
+### Concept Maps
 
 States should create concept maps between state-specific codes and standard codes to facilitate data exchange:
 
@@ -154,9 +152,9 @@ Description: "Mapping between California-specific provider categories and standa
 * group[=].element[=].target[=].equivalence = #equivalent
 ```
 
-## Implementation Guidance
+### Implementation Guidance
 
-### Namespace Conventions
+#### Namespace Conventions
 
 States should use the following namespace conventions:
 
@@ -167,7 +165,7 @@ States should use the following namespace conventions:
 
 Where `[state-code]` is the two-letter state code (e.g., `ca` for California).
 
-### Documentation
+#### Documentation
 
 States should document their customizations in a state-specific implementation guide that references this core IG. The state-specific IG should include:
 
@@ -178,7 +176,7 @@ States should document their customizations in a state-specific implementation g
 5. Examples
 6. Implementation guidance
 
-### Testing and Validation
+#### Testing and Validation
 
 States should test their customizations to ensure:
 
@@ -187,9 +185,9 @@ States should test their customizations to ensure:
 3. Proper mapping between state-specific and standard codes
 4. Interoperability with other systems
 
-## Examples
+### Examples
 
-### Example 1: State-Specific Provider Type
+#### Example 1: State-Specific Provider Type
 
 ```
 // California-specific provider category code system
@@ -248,7 +246,7 @@ Description: "Mapping between California-specific provider categories and standa
 * group[=].element[=].target[=].equivalence = #wider
 ```
 
-### Example 2: State-Specific Enrollment Program
+#### Example 2: State-Specific Enrollment Program
 
 ```
 // New York-specific enrollment program code system
@@ -304,3 +302,4 @@ Description: "Mapping between New York-specific enrollment programs and standard
 * group[=].element[+].code = #mltc
 * group[=].element[=].target[+].code = #long-term-services-and-supports
 * group[=].element[=].target[=].equivalence = #equivalent
+```

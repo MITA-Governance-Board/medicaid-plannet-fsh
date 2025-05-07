@@ -1,10 +1,8 @@
-# Data Quality Framework
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides a framework for ensuring the quality, currency, and accuracy of provider directory data. High-quality provider directory data is essential for patients to find appropriate care, for payers to manage networks, and for regulators to assess network adequacy. This framework outlines approaches for data validation, attestation, verification, and maintenance.
 
-## Data Quality Principles
+### Data Quality Principles
 
 The following principles should guide the implementation of data quality processes:
 
@@ -15,17 +13,17 @@ The following principles should guide the implementation of data quality process
 5. **Traceability**: The source and history of data should be documented.
 6. **Accessibility**: Data should be accessible to authorized users in a usable format.
 
-## Provider Attestation
+### Provider Attestation
 
 Provider attestation is a process by which providers confirm the accuracy of their information. This IG recommends the following approach to provider attestation:
 
-### Attestation Process
+#### Attestation Process
 
 1. **Initial Attestation**: Providers should attest to the accuracy of their information during the initial enrollment process.
 2. **Periodic Re-attestation**: Providers should re-attest to the accuracy of their information at regular intervals (e.g., quarterly, semi-annually, or annually).
 3. **Event-Driven Attestation**: Providers should attest to the accuracy of their information when significant changes occur (e.g., change of address, addition of new services).
 
-### Attestation Documentation
+#### Attestation Documentation
 
 The following information should be captured during the attestation process:
 
@@ -34,7 +32,7 @@ The following information should be captured during the attestation process:
 - Scope of the attestation (e.g., all information, specific elements)
 - Method of attestation (e.g., online portal, signed document)
 
-### Attestation Extensions
+#### Attestation Extensions
 
 This IG defines the following extensions to document attestation information:
 
@@ -73,17 +71,17 @@ Description: "Value set for methods of attestation."
 * include codes from system AttestationMethodCS
 ```
 
-## Verification Workflows
+### Verification Workflows
 
 Verification workflows are processes by which the accuracy of provider information is confirmed by a third party. This IG recommends the following approach to verification workflows:
 
-### Verification Process
+#### Verification Process
 
 1. **Initial Verification**: Provider information should be verified during the initial enrollment process.
 2. **Periodic Re-verification**: Provider information should be re-verified at regular intervals (e.g., annually).
 3. **Event-Driven Verification**: Provider information should be verified when significant changes occur or when discrepancies are identified.
 
-### Verification Methods
+#### Verification Methods
 
 The following methods can be used for verification:
 
@@ -92,7 +90,7 @@ The following methods can be used for verification:
 - **Automated Verification**: Verification through automated processes (e.g., address validation services, phone number validation services).
 - **Manual Verification**: Verification through manual processes (e.g., phone calls, site visits).
 
-### Verification Documentation
+#### Verification Documentation
 
 The following information should be captured during the verification process:
 
@@ -102,7 +100,7 @@ The following information should be captured during the verification process:
 - Result of verification
 - Identity of the verifier
 
-### Verification Extensions
+#### Verification Extensions
 
 This IG defines the following extensions to document verification information:
 
@@ -179,11 +177,11 @@ Description: "Value set for results of verification."
 * include codes from system VerificationResultCS
 ```
 
-## Data Source Documentation
+### Data Source Documentation
 
 Data source documentation provides information about the origin of data elements. This IG recommends the following approach to data source documentation:
 
-### Data Source Information
+#### Data Source Information
 
 The following information should be captured about data sources:
 
@@ -192,7 +190,7 @@ The following information should be captured about data sources:
 - Method by which the data was obtained
 - Reliability of the source
 
-### Data Source Extensions
+#### Data Source Extensions
 
 This IG defines the following extensions to document data source information:
 
@@ -265,19 +263,19 @@ Description: "Value set for reliability of data sources."
 * include codes from system DataReliabilityCS
 ```
 
-## Data Currency
+### Data Currency
 
 Data currency refers to how up-to-date the information is. This IG recommends the following approach to data currency:
 
-### Last Updated Timestamps
+#### Last Updated Timestamps
 
 All resources should include a `meta.lastUpdated` element indicating when the resource was last updated. In addition, specific data elements may have their own last updated timestamps.
 
-### Currency Monitoring
+#### Currency Monitoring
 
 Systems should monitor the currency of data and flag data that has not been updated within a specified timeframe. The appropriate timeframe may vary depending on the type of data and regulatory requirements.
 
-### Currency Extensions
+#### Currency Extensions
 
 This IG defines the following extensions to document data currency information:
 
@@ -315,16 +313,16 @@ Description: "Value set for status of data currency."
 * include codes from system DataCurrencyStatusCS
 ```
 
-## Implementation Guidance
+### Implementation Guidance
 
-### Resource-Level vs. Element-Level Documentation
+#### Resource-Level vs. Element-Level Documentation
 
 Data quality documentation can be applied at both the resource level and the element level:
 
 - **Resource-Level Documentation**: Apply extensions to the resource as a whole to document attestation, verification, data source, and currency information for the entire resource.
 - **Element-Level Documentation**: Apply extensions to specific elements to document attestation, verification, data source, and currency information for individual data elements.
 
-### Prioritizing Data Elements
+#### Prioritizing Data Elements
 
 Not all data elements require the same level of quality assurance. Implementers should prioritize data elements based on:
 
@@ -333,11 +331,11 @@ Not all data elements require the same level of quality assurance. Implementers 
 - Frequency of use
 - Frequency of change
 
-### Integration with Existing Processes
+#### Integration with Existing Processes
 
 Data quality processes should be integrated with existing provider enrollment, credentialing, and directory maintenance processes to minimize duplication of effort.
 
-### Automation
+#### Automation
 
 Where possible, data quality processes should be automated to reduce manual effort and improve efficiency. Examples of automation include:
 
@@ -346,7 +344,7 @@ Where possible, data quality processes should be automated to reduce manual effo
 - Automated license verification through integration with licensing board APIs
 - Automated reminders for attestation and verification
 
-### Reporting and Analytics
+#### Reporting and Analytics
 
 Systems should provide reporting and analytics capabilities to monitor data quality, including:
 
@@ -356,9 +354,9 @@ Systems should provide reporting and analytics capabilities to monitor data qual
 - Attestation status
 - Discrepancy reports
 
-## Examples
+### Examples
 
-### Example 1: Provider Attestation
+#### Example 1: Provider Attestation
 
 ```
 Instance: MedicaidPractitionerExample1
@@ -393,7 +391,7 @@ Usage: #example
 * extension[AttestationInformation].extension[attestationScope].valueString = "All demographic and practice information"
 ```
 
-### Example 2: Address Verification
+#### Example 2: Address Verification
 
 ```
 Instance: MedicaidLocationExample1
@@ -426,7 +424,7 @@ Usage: #example
 * managingOrganization = Reference(MedicaidOrganizationExample1)
 ```
 
-### Example 3: Data Source and Currency
+#### Example 3: Data Source and Currency
 
 ```
 Instance: MedicaidOrganizationExample1
@@ -463,3 +461,4 @@ Usage: #example
 * extension[DataCurrencyInformation].extension[updateFrequency].valueDuration.code = #d
 * extension[DataCurrencyInformation].extension[nextUpdateDue].valueDate = "2025-07-14"
 * extension[DataCurrencyInformation].extension[currencyStatus].valueCodeableConcept = DataCurrencyStatusCS#current "Current"
+```

@@ -152,7 +152,7 @@ Usage: #example
 * status = #active
 * name = "Anytown County Service Area"
 * description = "Medicaid service area covering Anytown County"
-* type = http://terminology.hl7.org/CodeSystem/v3-RoleCode#COUNTRY "Country"
+* type = http://terminology.hl7.org/CodeSystem/location-physical-type#jdn "Jurisdiction"
 * physicalType = http://terminology.hl7.org/CodeSystem/location-physical-type#jdn "Jurisdiction"
 * position.longitude = -73.9712
 * position.latitude = 40.7831
@@ -202,7 +202,7 @@ Usage: #example
 * status = #active
 * name = "Anytown Medical Group - Main Office"
 * description = "Main office of Anytown Medical Group"
-* type = http://terminology.hl7.org/CodeSystem/v3-RoleCode#OUTPHARM "outpatient pharmacy"
+* type = http://terminology.hl7.org/CodeSystem/service-type#17 "Pharmacy"
 * telecom[0].system = #phone
 * telecom[0].value = "555-987-6543"
 * telecom[0].use = #work

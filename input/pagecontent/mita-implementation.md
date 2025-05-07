@@ -1,14 +1,12 @@
-# MITA Implementation Guidance
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides guidance for implementing provider directory functionality in alignment with the Medicaid Information Technology Architecture (MITA) 3.0 business processes. This guidance is intended to help state Medicaid agencies and their technology partners implement FHIR-based provider directories that support MITA business processes while meeting federal requirements for interoperability.
 
-## MITA Business Processes
+### MITA Business Processes
 
 The MITA framework defines several business processes related to provider management. This IG focuses on the following key business processes:
 
-### PM01 - Provider Enrollment
+#### PM01 - Provider Enrollment
 
 The Provider Enrollment business process encompasses the activities of enrolling providers to deliver services to Medicaid members. This includes:
 
@@ -18,7 +16,7 @@ The Provider Enrollment business process encompasses the activities of enrolling
 - Executing provider agreements
 - Notifying providers of enrollment decisions
 
-#### FHIR Resources for Provider Enrollment
+##### FHIR Resources for Provider Enrollment
 
 The following FHIR resources support the Provider Enrollment business process:
 
@@ -32,7 +30,7 @@ The following FHIR resources support the Provider Enrollment business process:
 | Enrollment Status | Extension | MedicaidEnrollmentStatus | Status of the provider's enrollment |
 | Enrollment Date | Extension | MedicaidEnrollmentDate | Date of the provider's enrollment |
 
-#### Implementation Guidance for Provider Enrollment
+##### Implementation Guidance for Provider Enrollment
 
 1. **Application Tracking**:
    - Use Task resources to track the progress of provider enrollment applications
@@ -59,7 +57,7 @@ The following FHIR resources support the Provider Enrollment business process:
    - Implement workflows for status changes (e.g., pending to active, active to suspended)
    - Ensure status changes are properly documented and communicated
 
-### PM02 - Provider Information Management
+#### PM02 - Provider Information Management
 
 The Provider Information Management business process encompasses the activities of maintaining accurate provider information. This includes:
 
@@ -69,7 +67,7 @@ The Provider Information Management business process encompasses the activities 
 - Maintaining provider service information
 - Handling provider status changes
 
-#### FHIR Resources for Provider Information Management
+##### FHIR Resources for Provider Information Management
 
 The following FHIR resources support the Provider Information Management business process:
 
@@ -82,7 +80,7 @@ The following FHIR resources support the Provider Information Management busines
 | Provider Locations | Location | MedicaidLocation | Locations where services are provided |
 | Provider Status | active flag, Extension | MedicaidEnrollmentStatus | Status of the provider |
 
-#### Implementation Guidance for Provider Information Management
+##### Implementation Guidance for Provider Information Management
 
 1. **Information Update Workflows**:
    - Implement workflows for providers to update their information
@@ -114,7 +112,7 @@ The following FHIR resources support the Provider Information Management busines
    - Ensure status changes are properly documented and communicated
    - Update related resources when a provider's status changes
 
-### PM08 - Provider Network Management
+#### PM08 - Provider Network Management
 
 The Provider Network Management business process encompasses the activities of developing and maintaining the provider network. This includes:
 
@@ -124,7 +122,7 @@ The Provider Network Management business process encompasses the activities of d
 - Managing provider contracts
 - Handling network changes
 
-#### FHIR Resources for Provider Network Management
+##### FHIR Resources for Provider Network Management
 
 The following FHIR resources support the Provider Network Management business process:
 
@@ -137,7 +135,7 @@ The following FHIR resources support the Provider Network Management business pr
 | Service Area | Extension | MedicaidServiceArea | Geographic area covered by the network |
 | Provider Contracts | Contract | | Contracts between providers and networks |
 
-#### Implementation Guidance for Provider Network Management
+##### Implementation Guidance for Provider Network Management
 
 1. **Network Definition**:
    - Use MedicaidNetwork to define provider networks
@@ -164,19 +162,19 @@ The following FHIR resources support the Provider Network Management business pr
    - Ensure changes are properly documented and communicated
    - Assess the impact of changes on network adequacy
 
-## MITA Maturity Model
+### MITA Maturity Model
 
 The MITA Maturity Model defines five levels of maturity for Medicaid systems. This IG supports states in achieving higher levels of maturity for provider directory capabilities.
 
-### Level 1 - As-Is
+#### Level 1 - As-Is
 
 At Level 1, provider directory processes are largely manual and paper-based. Data is stored in siloed systems with limited automation and interoperability.
 
-### Level 2 - Transition
+#### Level 2 - Transition
 
 At Level 2, provider directory processes are partially automated, but still rely on manual intervention. Data is stored in electronic systems, but interoperability is limited.
 
-#### Implementation Guidance for Level 2
+##### Implementation Guidance for Level 2
 
 1. **Electronic Data Storage**:
    - Implement a basic FHIR server to store provider directory data
@@ -188,11 +186,11 @@ At Level 2, provider directory processes are partially automated, but still rely
    - Implement basic reporting capabilities
    - Provide a simple user interface for data entry and retrieval
 
-### Level 3 - To-Be
+#### Level 3 - To-Be
 
 At Level 3, provider directory processes are largely automated and standardized. Data is stored in interoperable systems that support standards-based exchange.
 
-#### Implementation Guidance for Level 3
+##### Implementation Guidance for Level 3
 
 1. **Standards-Based Interoperability**:
    - Implement the full set of profiles defined in this IG
@@ -209,11 +207,11 @@ At Level 3, provider directory processes are largely automated and standardized.
    - Automate data validation and verification processes
    - Monitor and report on data quality metrics
 
-### Level 4 - Enhanced
+#### Level 4 - Enhanced
 
 At Level 4, provider directory processes are fully automated and integrated with other systems. Data is exchanged seamlessly across the healthcare ecosystem.
 
-#### Implementation Guidance for Level 4
+##### Implementation Guidance for Level 4
 
 1. **Advanced Interoperability**:
    - Implement FHIR-based APIs for real-time data exchange
@@ -230,11 +228,11 @@ At Level 4, provider directory processes are fully automated and integrated with
    - Support advanced search and filtering capabilities
    - Enable consumer feedback on provider information
 
-### Level 5 - Optimized
+#### Level 5 - Optimized
 
 At Level 5, provider directory processes are continuously optimized and improved. Data is of the highest quality and is used to drive strategic decision-making.
 
-#### Implementation Guidance for Level 5
+##### Implementation Guidance for Level 5
 
 1. **Continuous Improvement**:
    - Implement processes for continuous monitoring and improvement
@@ -251,9 +249,9 @@ At Level 5, provider directory processes are continuously optimized and improved
    - Contribute to national provider directories
    - Support cross-state provider data exchange
 
-## Implementation Patterns
+### Implementation Patterns
 
-### Provider Enrollment Pattern
+#### Provider Enrollment Pattern
 
 The following sequence diagram illustrates a typical provider enrollment workflow:
 
@@ -281,7 +279,7 @@ sequenceDiagram
     EnrollmentSystem->>Provider: Notify enrollment decision
 ```
 
-### Provider Information Update Pattern
+#### Provider Information Update Pattern
 
 The following sequence diagram illustrates a typical provider information update workflow:
 
@@ -310,7 +308,7 @@ sequenceDiagram
     end
 ```
 
-### Network Adequacy Assessment Pattern
+#### Network Adequacy Assessment Pattern
 
 The following sequence diagram illustrates a typical network adequacy assessment workflow:
 
@@ -340,9 +338,9 @@ sequenceDiagram
     end
 ```
 
-## Security and Privacy Considerations
+### Security and Privacy Considerations
 
-### Authentication and Authorization
+#### Authentication and Authorization
 
 Provider directory systems should implement appropriate authentication and authorization mechanisms to ensure that only authorized users can access and modify provider information. This IG recommends the following approach:
 
@@ -356,7 +354,7 @@ Provider directory systems should implement appropriate authentication and autho
    - Define granular permissions for different types of users
    - Regularly review and update access controls
 
-### Data Protection
+#### Data Protection
 
 Provider directory systems should implement appropriate data protection mechanisms to ensure the confidentiality and integrity of provider information. This IG recommends the following approach:
 
@@ -370,7 +368,7 @@ Provider directory systems should implement appropriate data protection mechanis
    - Maintain audit logs of all data changes
    - Regularly validate data integrity
 
-### Audit Logging
+#### Audit Logging
 
 Provider directory systems should implement comprehensive audit logging to track all access to and modifications of provider information. This IG recommends the following approach:
 
@@ -389,9 +387,9 @@ Provider directory systems should implement comprehensive audit logging to track
    - Retain audit logs for an appropriate period
    - Regularly review audit logs for suspicious activity
 
-## Testing and Validation
+### Testing and Validation
 
-### Conformance Testing
+#### Conformance Testing
 
 Provider directory implementations should be tested for conformance to this IG. This IG recommends the following approach:
 
@@ -410,7 +408,7 @@ Provider directory implementations should be tested for conformance to this IG. 
    - Verify that extension values conform to the defined value sets
    - Test extension-based search parameters
 
-### Functional Testing
+#### Functional Testing
 
 Provider directory implementations should be tested for functional correctness. This IG recommends the following approach:
 
@@ -429,7 +427,7 @@ Provider directory implementations should be tested for functional correctness. 
    - Verify that response times meet requirements
    - Test system scalability
 
-### User Acceptance Testing
+#### User Acceptance Testing
 
 Provider directory implementations should be tested for usability and acceptance by end users. This IG recommends the following approach:
 
@@ -448,11 +446,11 @@ Provider directory implementations should be tested for usability and acceptance
    - Verify that administrators can effectively manage the directory
    - Collect feedback on usability and functionality
 
-## Implementation Timeline
+### Implementation Timeline
 
 The following timeline provides a suggested approach for implementing a FHIR-based provider directory in alignment with MITA:
 
-### Phase 1: Planning and Requirements (3-6 months)
+#### Phase 1: Planning and Requirements (3-6 months)
 
 1. **Assess Current State**:
    - Document current provider directory processes
@@ -469,7 +467,7 @@ The following timeline provides a suggested approach for implementing a FHIR-bas
    - Identify resources and dependencies
    - Develop risk management plan
 
-### Phase 2: Core Implementation (6-12 months)
+#### Phase 2: Core Implementation (6-12 months)
 
 1. **Implement Core Infrastructure**:
    - Set up FHIR server
@@ -486,7 +484,7 @@ The following timeline provides a suggested approach for implementing a FHIR-bas
    - Develop administrative interface
    - Develop consumer-facing directory
 
-### Phase 3: Advanced Implementation (6-12 months)
+#### Phase 3: Advanced Implementation (6-12 months)
 
 1. **Implement Advanced Resources**:
    - Implement PractitionerRole and OrganizationAffiliation profiles
@@ -503,7 +501,7 @@ The following timeline provides a suggested approach for implementing a FHIR-bas
    - Implement data source documentation
    - Implement data currency monitoring
 
-### Phase 4: Integration and Optimization (6-12 months)
+#### Phase 4: Integration and Optimization (6-12 months)
 
 1. **Integrate with Other Systems**:
    - Integrate with enrollment and credentialing systems
@@ -520,7 +518,7 @@ The following timeline provides a suggested approach for implementing a FHIR-bas
    - Enhance user interfaces based on feedback
    - Implement continuous improvement processes
 
-## Conclusion
+### Conclusion
 
 This implementation guidance provides a framework for implementing provider directory functionality in alignment with MITA business processes. By following this guidance, state Medicaid agencies and their technology partners can implement FHIR-based provider directories that support MITA business processes while meeting federal requirements for interoperability.
 

@@ -1,12 +1,10 @@
-# Medicaid Information Technology Architecture (MITA) 3.0 Overview
-
-## Introduction to MITA
+### Introduction to MITA
 
 The Medicaid Information Technology Architecture (MITA) is a CMS initiative that establishes national guidelines for technologies and processes that improve the administration of the Medicaid program. MITA is intended to foster integrated business and IT transformation across the Medicaid enterprise to improve the administration of the Medicaid program.
 
 MITA 3.0, released in 2012, represents a significant update to the framework and includes detailed business processes, technical capabilities, and information architecture guidelines that state Medicaid agencies can use to modernize their systems.
 
-## MITA Business Architecture
+### MITA Business Architecture
 
 The MITA Business Architecture defines business processes that are common across state Medicaid programs. These processes are organized into business areas, including:
 
@@ -20,7 +18,7 @@ The MITA Business Architecture defines business processes that are common across
 - Contractor Management
 - Financial Management
 
-### Provider Management Business Processes
+#### Provider Management Business Processes
 
 This Implementation Guide focuses on the Provider Management business area, which includes the following key business processes relevant to provider directories:
 
@@ -29,7 +27,7 @@ This Implementation Guide focuses on the Provider Management business area, whic
 - **PM03 - Provider Support**: The process of responding to provider inquiries and providing information about the Medicaid program.
 - **PM08 - Provider Network Management**: The process of developing and maintaining the provider network to ensure adequate access to care.
 
-## MITA Information Architecture
+### MITA Information Architecture
 
 The MITA Information Architecture defines the data needed to support the business processes. For provider directories, key data concepts include:
 
@@ -40,7 +38,7 @@ The MITA Information Architecture defines the data needed to support the busines
 - Provider accessibility information
 - Electronic service endpoints
 
-## MITA Technical Architecture
+### MITA Technical Architecture
 
 The MITA Technical Architecture defines the technical capabilities needed to support the business processes and information architecture. For provider directories, key technical capabilities include:
 
@@ -49,7 +47,7 @@ The MITA Technical Architecture defines the technical capabilities needed to sup
 - **Service-Oriented Architecture**: The ability to expose provider directory functionality as services.
 - **Interoperability**: The ability to exchange provider information with other systems.
 
-## MITA Maturity Model
+### MITA Maturity Model
 
 The MITA Maturity Model defines five levels of maturity for Medicaid systems:
 
@@ -61,11 +59,11 @@ The MITA Maturity Model defines five levels of maturity for Medicaid systems:
 
 This Implementation Guide supports states in achieving Level 3 and above for provider directory capabilities by adopting FHIR standards and aligning with the CMS Interoperability Rule.
 
-## Alignment with MITA 3.0
+### Alignment with MITA 3.0
 
 This Implementation Guide aligns with MITA 3.0 in the following ways:
 
-### Business Process Alignment
+#### Business Process Alignment
 
 The profiles and capabilities defined in this IG support the following MITA business processes:
 
@@ -75,7 +73,7 @@ The profiles and capabilities defined in this IG support the following MITA busi
 | PM02 - Provider Information Management | Maintain accurate provider information |
 | PM08 - Provider Network Management | Manage provider networks and affiliations |
 
-### Information Architecture Alignment
+#### Information Architecture Alignment
 
 The FHIR resources and profiles defined in this IG align with the MITA information architecture by providing standardized representations of:
 
@@ -85,7 +83,7 @@ The FHIR resources and profiles defined in this IG align with the MITA informati
 - Network affiliations (Network, OrganizationAffiliation)
 - Electronic endpoints (Endpoint)
 
-#### Leveraging Industry Standard Code Systems
+##### Leveraging Industry Standard Code Systems
 
 This IG enhances MITA alignment by leveraging industry standard code systems:
 
@@ -93,14 +91,14 @@ This IG enhances MITA alignment by leveraging industry standard code systems:
 - **CMS Place of Service Codes**: Incorporated into MedicaidFacilityTypeVS for standardized facility classification
 - **HCPCS**: Referenced for service categories to align with standard billing practices
 
-#### Concept Maps for Interoperability
+##### Concept Maps for Interoperability
 
 To facilitate interoperability between Medicaid-specific codes and industry standards, this IG provides concept maps:
 
 - **MedicaidToNUCCProviderTypeMap**: Enables translation between Medicaid provider types and NUCC taxonomy codes
 - **MedicaidToCMSFacilityTypeMap**: Enables translation between Medicaid facility types and CMS Place of Service codes
 
-### Technical Architecture Alignment
+#### Technical Architecture Alignment
 
 This IG supports the MITA technical architecture by:
 
@@ -111,7 +109,7 @@ This IG supports the MITA technical architecture by:
 - Providing enhanced search capabilities through standardized search parameters
 - Implementing version management for code systems to support evolution over time
 
-## MITA Seven Standards and Conditions
+### MITA Seven Standards and Conditions
 
 CMS requires that Medicaid IT systems meet the Seven Standards and Conditions for enhanced federal funding. This IG supports compliance with these conditions, particularly:
 

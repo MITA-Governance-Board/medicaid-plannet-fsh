@@ -1,16 +1,14 @@
-# CMS Interoperability and Patient Access API Rule
-
-## Overview
+### Overview
 
 The Centers for Medicare & Medicaid Services (CMS) Interoperability and Patient Access final rule (CMS-9115-F) was published in the Federal Register on May 1, 2020. This rule implements key provisions of the 21st Century Cures Act and supports the MyHealthEData initiative to improve patient access to their health information.
 
 The rule requires certain payers, including Medicaid managed care plans, to implement and maintain standards-based APIs that allow patients to easily access their claims and encounter information, including provider directory information, through third-party applications of their choice.
 
-## Provider Directory API Requirements
+### Provider Directory API Requirements
 
 The CMS Interoperability Rule includes specific requirements for provider directory APIs:
 
-### Covered Entities
+#### Covered Entities
 
 The following entities are required to implement provider directory APIs:
 
@@ -20,7 +18,7 @@ The following entities are required to implement provider directory APIs:
 - CHIP managed care entities
 - Qualified Health Plan (QHP) issuers on the Federally-facilitated Exchanges (FFEs)
 
-### Required Information
+#### Required Information
 
 The provider directory API must make the following information publicly available:
 
@@ -30,21 +28,21 @@ The provider directory API must make the following information publicly availabl
 - Specialties
 - Network status (in-network or not)
 
-### Technical Standards
+#### Technical Standards
 
 The rule requires the use of the following standards:
 
 - Health Level 7 (HL7®) Fast Healthcare Interoperability Resources (FHIR®) Release 4.0.1
 - Implementation specifications, including the US Core Implementation Guide (IG) and the CARIN Alliance's Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)
 
-### Timeframes for Updates
+#### Timeframes for Updates
 
 Provider directory information must be updated:
 
 - Within 30 calendar days of receiving updated provider directory information
 - Must include the date of the last update
 
-### Public Access
+#### Public Access
 
 The provider directory API must:
 
@@ -52,15 +50,15 @@ The provider directory API must:
 - Be accessible via a publicly accessible endpoint
 - Be documented in a publicly accessible manner
 
-## Alignment with This Implementation Guide
+### Alignment with This Implementation Guide
 
 This Implementation Guide supports compliance with the CMS Interoperability Rule in the following ways:
 
-### FHIR-Based API
+#### FHIR-Based API
 
 This IG defines a FHIR-based API for provider directory information, using FHIR R4 (4.0.1) as required by the CMS rule.
 
-### Required Information
+#### Required Information
 
 The profiles defined in this IG include all the required provider directory information specified in the CMS rule:
 
@@ -72,7 +70,7 @@ The profiles defined in this IG include all the required provider directory info
 | Specialties | PractitionerRole.specialty, OrganizationRole.specialty |
 | Network status | Network, OrganizationAffiliation |
 
-### Additional Capabilities
+#### Additional Capabilities
 
 This IG goes beyond the minimum requirements of the CMS rule to provide additional capabilities that support more comprehensive provider directory functionality:
 
@@ -81,7 +79,7 @@ This IG goes beyond the minimum requirements of the CMS rule to provide addition
 - Electronic endpoints for electronic service delivery
 - Relationships between providers, organizations, and networks
 
-### Implementation Guidance
+#### Implementation Guidance
 
 This IG provides implementation guidance specific to Medicaid provider directories, including:
 
@@ -89,7 +87,7 @@ This IG provides implementation guidance specific to Medicaid provider directori
 - Conformance requirements for provider directory APIs
 - Examples demonstrating the use of the profiles in real-world scenarios
 
-## Compliance Timeline
+### Compliance Timeline
 
 The CMS Interoperability Rule established the following compliance timeline for provider directory APIs:
 
@@ -99,7 +97,7 @@ The CMS Interoperability Rule established the following compliance timeline for 
 
 Implementers should consult the latest CMS guidance for any updates to these timelines.
 
-## Additional Resources
+### Additional Resources
 
 For more information about the CMS Interoperability and Patient Access API Rule, see:
 

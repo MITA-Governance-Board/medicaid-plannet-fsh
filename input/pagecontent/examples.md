@@ -1,8 +1,6 @@
-# Examples
-
 This page provides examples of how to use the profiles defined in this Implementation Guide. These examples demonstrate how to represent Medicaid provider directory information using FHIR resources.
 
-## Example Scenarios
+### Example Scenarios
 
 The examples in this IG are organized around common scenarios in Medicaid provider directories:
 
@@ -12,9 +10,9 @@ The examples in this IG are organized around common scenarios in Medicaid provid
 4. **Service Offerings**: Examples showing how to represent services offered by Medicaid providers
 5. **Electronic Endpoints**: Examples showing how to represent electronic endpoints for Medicaid providers
 
-## Individual Provider Examples
+### Individual Provider Examples
 
-### Example 1: Primary Care Physician
+#### Example 1: Primary Care Physician
 
 This example shows a primary care physician enrolled in Medicaid:
 
@@ -148,7 +146,7 @@ This example shows a primary care physician enrolled in Medicaid:
 }
 ```
 
-### Example 2: Practitioner Role
+#### Example 2: Practitioner Role
 
 This example shows the role of the primary care physician within an organization:
 
@@ -275,9 +273,9 @@ This example shows the role of the primary care physician within an organization
 }
 ```
 
-## Organization Examples
+### Organization Examples
 
-### Example 3: Healthcare Organization
+#### Example 3: Healthcare Organization
 
 This example shows a healthcare organization enrolled in Medicaid:
 
@@ -374,9 +372,9 @@ This example shows a healthcare organization enrolled in Medicaid:
 }
 ```
 
-## Network Examples
+### Network Examples
 
-### Example 4: Medicaid Network
+#### Example 4: Medicaid Network
 
 This example shows a Medicaid managed care network:
 
@@ -457,7 +455,7 @@ This example shows a Medicaid managed care network:
 }
 ```
 
-### Example 5: Organization Affiliation
+#### Example 5: Organization Affiliation
 
 This example shows an organization's affiliation with a Medicaid network:
 
@@ -528,6 +526,6 @@ This example shows an organization's affiliation with a Medicaid network:
 }
 ```
 
-## Additional Examples
+### Additional Examples
 
 Additional examples for all profiles defined in this Implementation Guide can be found in the [Examples](artifacts.html#examples) section of the Artifacts page.

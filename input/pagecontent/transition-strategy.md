@@ -1,10 +1,8 @@
-# Transition Strategy
-
-## Overview
+### Overview
 
 This Implementation Guide (IG) provides a framework for transitioning from existing provider directory systems to FHIR-based provider directories. Transitioning to a FHIR-based provider directory requires careful planning, execution, and monitoring to ensure a smooth transition with minimal disruption to operations. This guidance outlines approaches for implementing a transition strategy for Medicaid provider directories.
 
-## Transition Principles
+### Transition Principles
 
 The following principles should guide the implementation of a transition strategy:
 
@@ -14,9 +12,9 @@ The following principles should guide the implementation of a transition strateg
 4. **Stakeholder Engagement**: Engage stakeholders throughout the transition process.
 5. **Risk Management**: Identify and mitigate risks associated with the transition.
 
-## Transition Patterns
+### Transition Patterns
 
-### Parallel Operation
+#### Parallel Operation
 
 The parallel operation pattern involves running the existing system and the new FHIR-based system in parallel for a period of time. This pattern provides the following benefits:
 
@@ -25,7 +23,7 @@ The parallel operation pattern involves running the existing system and the new 
 3. **Gradual Transition**: Allows for a gradual transition of users and systems to the new system.
 4. **Operational Continuity**: Ensures operational continuity during the transition.
 
-#### Implementation Approach
+##### Implementation Approach
 
 1. **Dual Data Entry**: Implement processes for entering data into both systems.
 2. **Data Synchronization**: Implement mechanisms for synchronizing data between systems.
@@ -33,7 +31,7 @@ The parallel operation pattern involves running the existing system and the new 
 4. **Gradual Cutover**: Gradually transition users and systems to the new system.
 5. **Decommissioning**: Decommission the existing system once the transition is complete.
 
-#### Considerations
+##### Considerations
 
 1. **Resource Requirements**: Requires resources to maintain both systems.
 2. **Data Consistency**: Requires mechanisms to ensure data consistency between systems.
@@ -41,7 +39,7 @@ The parallel operation pattern involves running the existing system and the new 
 4. **Operational Complexity**: Increases operational complexity during the transition.
 5. **Timeline**: May extend the transition timeline.
 
-### Phased Replacement
+#### Phased Replacement
 
 The phased replacement pattern involves replacing the existing system with the new FHIR-based system in phases. This pattern provides the following benefits:
 
@@ -51,7 +49,7 @@ The phased replacement pattern involves replacing the existing system with the n
 4. **Resource Allocation**: Allows for more efficient allocation of resources.
 5. **Stakeholder Adaptation**: Gives stakeholders time to adapt to changes.
 
-#### Implementation Approach
+##### Implementation Approach
 
 1. **Phase Definition**: Define clear phases with specific functionality.
 2. **Integration Planning**: Plan for integration between phases.
@@ -59,7 +57,7 @@ The phased replacement pattern involves replacing the existing system with the n
 4. **Testing**: Test each phase thoroughly before implementation.
 5. **Deployment**: Deploy each phase according to the plan.
 
-#### Considerations
+##### Considerations
 
 1. **Integration Complexity**: Requires careful planning for integration between phases.
 2. **Data Migration**: Requires data migration for each phase.
@@ -67,7 +65,7 @@ The phased replacement pattern involves replacing the existing system with the n
 4. **Timeline**: May extend the overall transition timeline.
 5. **Resource Allocation**: Requires resources for each phase.
 
-### API Facade
+#### API Facade
 
 The API facade pattern involves implementing a FHIR API layer on top of the existing system. This pattern provides the following benefits:
 
@@ -77,7 +75,7 @@ The API facade pattern involves implementing a FHIR API layer on top of the exis
 4. **Standards Compliance**: Achieves standards compliance without replacing the existing system.
 5. **Risk Mitigation**: Reduces the risk associated with replacing the existing system.
 
-#### Implementation Approach
+##### Implementation Approach
 
 1. **API Layer**: Implement a FHIR API layer on top of the existing system.
 2. **Data Mapping**: Map data between the existing system and FHIR resources.
@@ -85,7 +83,7 @@ The API facade pattern involves implementing a FHIR API layer on top of the exis
 4. **Caching**: Implement caching to improve performance.
 5. **Monitoring**: Monitor API usage and performance.
 
-#### Considerations
+##### Considerations
 
 1. **Performance**: May impact performance due to additional processing.
 2. **Data Mapping**: Requires mapping between different data models.
@@ -93,7 +91,7 @@ The API facade pattern involves implementing a FHIR API layer on top of the exis
 4. **Maintenance**: Requires maintenance of both the API layer and the existing system.
 5. **Technical Debt**: May increase technical debt if not properly managed.
 
-### Data Migration
+#### Data Migration
 
 The data migration pattern involves migrating data from the existing system to the new FHIR-based system. This pattern provides the following benefits:
 
@@ -111,7 +109,7 @@ The data migration pattern involves migrating data from the existing system to t
 4. **Data Validation**: Validate data in the new system.
 5. **Data Reconciliation**: Reconcile any discrepancies between systems.
 
-#### Considerations
+##### Considerations
 
 1. **Data Volume**: May involve large volumes of data.
 2. **Data Quality**: Requires addressing data quality issues.
@@ -119,9 +117,9 @@ The data migration pattern involves migrating data from the existing system to t
 4. **Rollback Plan**: Requires a rollback plan in case of issues.
 5. **Resource Requirements**: Requires significant resources for planning and execution.
 
-## Transition Planning
+### Transition Planning
 
-### Assessment
+#### Assessment
 
 The first step in transition planning is to assess the current state and define the target state:
 
@@ -155,7 +153,7 @@ The first step in transition planning is to assess the current state and define 
    - Operational requirements
    - Technical requirements
 
-### Strategy Development
+#### Strategy Development
 
 Based on the assessment, develop a transition strategy that addresses the specific needs and constraints of the organization:
 
@@ -194,7 +192,7 @@ Based on the assessment, develop a transition strategy that addresses the specif
    - Communication processes
    - Reporting processes
 
-### Implementation Planning
+#### Implementation Planning
 
 Develop detailed implementation plans for each phase of the transition:
 
@@ -233,7 +231,7 @@ Develop detailed implementation plans for each phase of the transition:
    - Support
    - Issue resolution
 
-### Monitoring and Evaluation
+#### Monitoring and Evaluation
 
 Develop plans for monitoring and evaluating the transition:
 
@@ -272,9 +270,9 @@ Develop plans for monitoring and evaluating the transition:
    - System enhancement
    - User experience improvement
 
-## Data Migration
+### Data Migration
 
-### Data Extraction
+#### Data Extraction
 
 Extract data from the existing provider directory system:
 
@@ -314,7 +312,7 @@ Extract data from the existing provider directory system:
    - Documenting extraction results
    - Preparing for transformation
 
-### Data Transformation
+#### Data Transformation
 
 Transform the extracted data to conform to FHIR resources:
 
@@ -353,7 +351,7 @@ Transform the extracted data to conform to FHIR resources:
    - Documenting transformation results
    - Preparing for loading
 
-### Data Loading
+#### Data Loading
 
 Load the transformed data into the FHIR-based provider directory system:
 
@@ -392,7 +390,7 @@ Load the transformed data into the FHIR-based provider directory system:
    - Documenting loading results
    - Preparing for verification
 
-### Data Verification
+#### Data Verification
 
 Verify the migrated data in the FHIR-based provider directory system:
 
@@ -431,9 +429,9 @@ Verify the migrated data in the FHIR-based provider directory system:
    - Obtaining verification approval
    - Preparing for cutover
 
-## Interface Transition
+### Interface Transition
 
-### Interface Inventory
+#### Interface Inventory
 
 Create an inventory of interfaces to and from the existing provider directory system:
 
@@ -472,7 +470,7 @@ Create an inventory of interfaces to and from the existing provider directory sy
    - Interface testing
    - Interface support
 
-### Interface Strategy
+#### Interface Strategy
 
 Develop a strategy for transitioning interfaces to the FHIR-based provider directory system:
 
@@ -511,7 +509,7 @@ Develop a strategy for transitioning interfaces to the FHIR-based provider direc
    - Documentation
    - Support
 
-### Interface Implementation
+#### Interface Implementation
 
 Implement the interface transition strategy:
 
@@ -550,9 +548,9 @@ Implement the interface transition strategy:
    - Security monitoring
    - Compliance monitoring
 
-## User Transition
+### User Transition
 
-### User Analysis
+#### User Analysis
 
 Analyze the users of the existing provider directory system:
 
@@ -591,7 +589,7 @@ Analyze the users of the existing provider directory system:
    - Influential users
    - Resistant users
 
-### User Engagement
+#### User Engagement
 
 Engage users throughout the transition process:
 
@@ -630,7 +628,7 @@ Engage users throughout the transition process:
    - Issue reports
    - Enhancement requests
 
-### User Training
+#### User Training
 
 Develop and deliver training for users of the new FHIR-based provider directory system:
 
@@ -669,9 +667,9 @@ Develop and deliver training for users of the new FHIR-based provider directory 
    - Performance impact
    - Support needs
 
-## Operational Transition
+### Operational Transition
 
-### Process Analysis
+#### Process Analysis
 
 Analyze the operational processes related to the provider directory:
 
@@ -710,7 +708,7 @@ Analyze the operational processes related to the provider directory:
    - Inefficient processes
    - Non-compliant processes
 
-### Process Redesign
+#### Process Redesign
 
 Redesign operational processes for the FHIR-based provider directory system:
 
@@ -749,7 +747,7 @@ Redesign operational processes for the FHIR-based provider directory system:
    - Process pilot
    - Process approval
 
-### Process Implementation
+#### Process Implementation
 
 Implement the redesigned operational processes:
 
@@ -788,9 +786,9 @@ Implement the redesigned operational processes:
    - Staff feedback
    - User feedback
 
-## Technical Transition
+### Technical Transition
 
-### Technical Architecture
+#### Technical Architecture
 
 Define the technical architecture for the FHIR-based provider directory system:
 
@@ -829,7 +827,7 @@ Define the technical architecture for the FHIR-based provider directory system:
    - Architecture phases
    - Architecture milestones
 
-### Technical Implementation
+#### Technical Implementation
 
 Implement the technical architecture for the FHIR-based provider directory system:
 
@@ -868,7 +866,7 @@ Implement the technical architecture for the FHIR-based provider directory syste
    - Integration deployment
    - Integration documentation
 
-### Technical Operations
+#### Technical Operations
 
 Establish technical operations for the FHIR-based provider directory system:
 
@@ -907,9 +905,9 @@ Establish technical operations for the FHIR-based provider directory system:
    - Tool enhancement
    - Staff development
 
-## Examples
+### Examples
 
-### Example 1: Parallel Operation
+#### Example 1: Parallel Operation
 
 A state Medicaid agency implements a FHIR-based provider directory while maintaining its existing provider directory system:
 
@@ -941,7 +939,7 @@ A state Medicaid agency implements a FHIR-based provider directory while maintai
    - Flexibility to adjust the transition timeline
    - Minimal disruption to operations
 
-### Example 2: Phased Replacement
+#### Example 2: Phased Replacement
 
 A state Medicaid agency replaces its existing provider directory system with a FHIR-based system in phases:
 
@@ -973,7 +971,7 @@ A state Medicaid agency replaces its existing provider directory system with a F
    - Ability to show progress through completed phases
    - Flexibility to adjust the approach based on experience
 
-### Example 3: API Facade
+#### Example 3: API Facade
 
 A state Medicaid agency implements a FHIR API facade on top of its existing provider directory system:
 
@@ -1005,7 +1003,7 @@ A state Medicaid agency implements a FHIR API facade on top of its existing prov
    - Opportunity to learn FHIR before full implementation
    - Flexibility to replace the underlying system gradually
 
-### Example 4: Data Migration
+#### Example 4: Data Migration
 
 A state Medicaid agency migrates its provider directory data to a new FHIR-based system:
 
@@ -1037,7 +1035,7 @@ A state Medicaid agency migrates its provider directory data to a new FHIR-based
    - Elimination of legacy technical debt
    - Clear transition point for users and systems
 
-## Conclusion
+### Conclusion
 
 Transitioning to a FHIR-based provider directory requires careful planning, execution, and monitoring. By implementing a comprehensive transition strategy, Medicaid agencies can minimize disruption, manage risk, and ensure a successful transition.
 

@@ -51,7 +51,7 @@ menu:
     MITA 3.0 Overview: mita-overview.html
     MITA Implementation Guidance: mita-implementation.html
     CMS Interoperability Rule: cms-interop-rule.html
-  Specification:
+  FHIR Artifacts:
     Provider Directory Resources: provider-directory-resources.html
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
