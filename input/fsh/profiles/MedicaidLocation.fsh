@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Location
 
 Profile: MedicaidLocation
-Parent: Location
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
 Id: medicaid-location
 Title: "Medicaid Location"
 Description: "Profile for a location in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."

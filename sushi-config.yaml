@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their meanings,      │
 # │  see: https://fshschool.org/docs/sushi/configuration/                                          │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.medicaid.plannet
+id: hl7.fhir.us.medicaid-plannet
 canonical: http://hl7.org/fhir/us/medicaid-plannet
 name: MedicaidPlanNet
 title: "Medicaid Provider Directory Implementation Guide"
@@ -101,6 +101,7 @@ parameters:
   excludettl: true
   excludemap: true
   active-tables: false
+  codesystem-snomed: http://snomed.info/sct/731000124108/version/20230901
 
 # ╭────────────────────────────────────────────Resources────────────────────────────────────────────╮
 # │  The resources property corresponds to IG.definition.resource. SUSHI can auto-generate          │

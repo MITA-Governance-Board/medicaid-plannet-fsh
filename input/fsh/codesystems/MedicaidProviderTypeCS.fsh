@@ -7,6 +7,8 @@ Description: "Code system for Medicaid provider types."
 * ^date = "2025-05-06"
 * ^caseSensitive = true
 * ^content = #complete
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #fm
 * #physician "Physician" "A doctor of medicine or osteopathy."
 * #nurse-practitioner "Nurse Practitioner" "A registered nurse with advanced education and clinical training."
 * #physician-assistant "Physician Assistant" "A healthcare professional who practices medicine under the supervision of a physician."

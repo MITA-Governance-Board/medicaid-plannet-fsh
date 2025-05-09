@@ -26,11 +26,7 @@ The examples used in this implementation guide are available for download:
 
 ### FHIR Shorthand (FSH) Source Files
 
-The FHIR Shorthand (FSH) source files used to create this implementation guide are available for download:
-
-- [FSH Source Files (ZIP)](fsh-source.zip)
-
-These files can be used with the SUSHI compiler to generate the FHIR resources used in this implementation guide.
+The FHIR Shorthand (FSH) source files used to create this implementation guide are available in the GitHub repository.
 
 ### Implementation Guide Source
 
@@ -53,25 +49,15 @@ dependencies:
 
 ### Validator Pack
 
-The validator pack for this implementation guide is available for download:
-
-- [Validator Pack (ZIP)](validator-pack.zip)
-
-This pack can be used with the FHIR Validator to validate resources against the profiles defined in this implementation guide.
+The validator pack for this implementation guide will be available in a future release.
 
 ### Companion Documents
 
-The following companion documents are available for download:
-
-- [Medicaid Provider Directory Implementation Guide Overview (PDF)](medicaid-plannet-overview.pdf)
-- [Medicaid Provider Directory Implementation Guide Technical Specifications (PDF)](medicaid-plannet-technical-specs.pdf)
-- [Medicaid Provider Directory Implementation Guide Implementation Considerations (PDF)](medicaid-plannet-implementation-considerations.pdf)
+Companion documents will be available in a future release.
 
 ### Change Log
 
-A log of changes made in each version of this implementation guide is available:
-
-- [Change Log](change-log.html)
+A change log will be available in future releases.
 
 ### Previous Versions
 

@@ -7,6 +7,8 @@ Description: "Code system for Medicaid facility types."
 * ^date = "2025-05-06"
 * ^caseSensitive = true
 * ^content = #complete
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #fm
 * #hospital "Hospital" "A healthcare institution providing patient treatment with specialized staff and equipment."
 * #clinic "Clinic" "A healthcare facility that is primarily devoted to the care of outpatients."
 * #group-practice "Group Practice" "A group of healthcare providers who work together and share resources."

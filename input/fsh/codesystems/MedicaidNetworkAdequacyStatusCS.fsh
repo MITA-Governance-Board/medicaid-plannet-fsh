@@ -2,6 +2,13 @@ CodeSystem: MedicaidNetworkAdequacyStatusCS
 Id: medicaid-network-adequacy-status-cs
 Title: "Medicaid Network Adequacy Status Code System"
 Description: "Code system for Medicaid network adequacy status."
+* ^version = "1.0.0"
+* ^experimental = false
+* ^date = "2025-05-06"
+* ^caseSensitive = true
+* ^content = #complete
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[0].valueCode = #fm
 * #adequate "Adequate" "The network meets all adequacy standards."
 * #partially-adequate "Partially Adequate" "The network meets some but not all adequacy standards."
 * #inadequate "Inadequate" "The network does not meet adequacy standards."
