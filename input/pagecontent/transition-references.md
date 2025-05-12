@@ -1,5 +1,3 @@
-### References
-
 1. Centers for Medicare & Medicaid Services (CMS). "Medicaid Information Technology Architecture (MITA) Framework 3.0." 2016.
 
 2. Kotter, J. P. "Leading Change: Why Transformation Efforts Fail." Harvard Business Review, 1995.

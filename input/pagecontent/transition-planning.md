@@ -1,5 +1,3 @@
-### Transition Planning
-
 Effective transition planning is essential for successfully migrating from existing provider directory systems to FHIR-based provider directories. This section outlines a comprehensive approach to planning and executing the transition.
 
 #### Overview

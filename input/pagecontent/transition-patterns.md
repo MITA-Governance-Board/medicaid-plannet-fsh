@@ -1,5 +1,3 @@
-### Transition Patterns
-
 This section describes common patterns for transitioning from existing provider directory systems to FHIR-based provider directories. Each pattern has different characteristics, benefits, and challenges, and may be appropriate in different circumstances.
 
 #### Parallel Operation

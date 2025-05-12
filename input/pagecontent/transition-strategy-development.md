@@ -1,5 +1,3 @@
-### Strategy Development
-
 Based on the [assessment](transition-assessment.html), develop a transition strategy that addresses the specific needs and constraints of the organization. The strategy should provide a clear roadmap for transitioning from the existing provider directory system to the FHIR-based system.
 
 #### Pattern Selection

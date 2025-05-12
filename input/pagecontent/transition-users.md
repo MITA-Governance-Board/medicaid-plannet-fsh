@@ -1,5 +1,3 @@
-### User Transition
-
 #### User Analysis
 
 Analyze the users of the existing provider directory system [10]:

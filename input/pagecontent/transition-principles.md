@@ -1,5 +1,3 @@
-### Transition Principles
-
 The following principles should guide the implementation of a transition strategy for Medicaid provider directories [1]:
 
 1. **Incremental Approach**: Implement the transition in phases rather than all at once, breaking down the complex migration into manageable components that can be delivered sequentially, allowing for focused implementation efforts, controlled risk exposure, and the ability to learn from early phases before proceeding to later ones, ensuring that the transition can be adjusted based on experience and evolving requirements while maintaining operational continuity [2].

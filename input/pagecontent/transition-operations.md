@@ -1,5 +1,3 @@
-### Operational Transition
-
 #### Process Analysis
 
 Analyze the operational processes related to the provider directory [12]:

@@ -1,5 +1,3 @@
-### Transition Strategy
-
 This Implementation Guide (IG) provides a framework for transitioning from existing provider directory systems to FHIR-based provider directories. Transitioning to a FHIR-based provider directory requires careful planning, execution, and monitoring to ensure a smooth transition with minimal disruption to operations. This guidance outlines approaches for implementing a transition strategy for Medicaid provider directories.
 
 ### Table of Contents

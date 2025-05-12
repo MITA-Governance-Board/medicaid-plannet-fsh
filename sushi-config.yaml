@@ -41,13 +41,13 @@ pages:
   transition-planning.md:
     title: "Transition Strategy: Transition Planning"
   transition-assessment.md:
-    title: "Transition Strategy: Assessment"
+    title: "Transition Strategy: Transition Planning: Assessment"
   transition-strategy-development.md:
-    title: "Transition Strategy: Strategy Development"
+    title: "Transition Strategy: Transition Planning: Strategy Development"
   transition-implementation.md:
-    title: "Transition Strategy: Implementation Planning"
+    title: "Transition Strategy: Transition Planning: Implementation Planning"
   transition-monitoring.md:
-    title: "Transition Strategy: Monitoring and Evaluation"
+    title: "Transition Strategy: Transition Planning: Monitoring and Evaluation"
   transition-data.md:
     title: "Transition Strategy: Data Migration"
   transition-interface.md:

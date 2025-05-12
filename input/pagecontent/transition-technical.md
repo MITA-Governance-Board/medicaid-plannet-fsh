@@ -1,5 +1,3 @@
-### Technical Transition
-
 #### Technical Architecture
 
 Define the technical architecture for the FHIR-based provider directory system [12]:
