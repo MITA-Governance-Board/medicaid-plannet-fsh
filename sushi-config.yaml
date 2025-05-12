@@ -34,8 +34,56 @@ pages:
     title: Versioning Strategy
   transition-strategy.md:
     title: Transition Strategy
+  transition-principles.md:
+    title: "Transition Strategy: Transition Principles"
+  transition-patterns.md:
+    title: "Transition Strategy: Transition Patterns"
+  transition-planning.md:
+    title: "Transition Strategy: Transition Planning"
+  transition-assessment.md:
+    title: "Transition Strategy: Assessment"
+  transition-strategy-development.md:
+    title: "Transition Strategy: Strategy Development"
+  transition-implementation.md:
+    title: "Transition Strategy: Implementation Planning"
+  transition-monitoring.md:
+    title: "Transition Strategy: Monitoring and Evaluation"
+  transition-data.md:
+    title: "Transition Strategy: Data Migration"
+  transition-interface.md:
+    title: "Transition Strategy: Interface Transition"
+  transition-users.md:
+    title: "Transition Strategy: User Transition"
+  transition-operations.md:
+    title: "Transition Strategy: Operational Transition"
+  transition-technical.md:
+    title: "Transition Strategy: Technical Transition"
+  transition-examples.md:
+    title: "Transition Strategy: Examples"
+  transition-conclusions.md:
+    title: "Transition Strategy: Conclusions"
+  transition-references.md:
+    title: "Transition Strategy: References"
   testing-framework.md:
     title: Testing Framework
+  testing-principles.md:
+    title: "Testing Framework: Testing Principles"
+  conformance-testing.md:
+    title: "Testing Framework: Conformance Testing"
+  functional-testing.md:
+    title: "Testing Framework: Functional Testing"
+  performance-testing.md:
+    title: "Testing Framework: Performance Testing"
+  security-testing.md:
+    title: "Testing Framework: Security Testing"
+  test-automation.md:
+    title: "Testing Framework: Test Automation"
+  test-environments.md:
+    title: "Testing Framework: Test Environments"
+  test-implementation.md:
+    title: "Testing Framework: Test Implementation"
+  testing-references.md:
+    title: "Testing Framework: References"
   examples.md:
     title: Examples
   downloads.md:
