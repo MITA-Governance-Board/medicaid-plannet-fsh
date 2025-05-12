@@ -144,23 +144,33 @@ This IG supports the MITA technical architecture by:
 
 - **Implementing version management for code systems to support evolution over time** - Establishing mechanisms for managing changes to terminology and code systems as requirements evolve, ensuring backward compatibility while enabling the addition of new concepts, deprecation of obsolete terms, and refinement of existing definitions to meet changing program needs.
 
-### MITA Seven Standards and Conditions
+### Conditions for Enhanced Funding (CEF)
 
-CMS requires that Medicaid IT systems meet the Seven Standards and Conditions for enhanced federal funding [7]. This IG supports compliance with these conditions, particularly:
+As a condition of receiving enhanced federal financial participation (FFP) for state expenditures on Medicaid Enterprise Systems (MES), states must attest that the system complies with all of the applicable 22 conditions for enhanced funding (CEF) as provided in 42 C.F.R. 433.112 and that the system remains compliant with federal Medicaid requirements for enhanced funding once it is in operation as provided in 42 C.F.R. 433.116 [7].
 
-1. **Modularity**: By defining discrete FHIR resources that can be implemented independently, enabling states to adopt a modular approach to provider directory implementation where components can be developed, tested, and deployed separately. This modularity supports incremental implementation, allows for component reuse, and facilitates maintenance and updates without requiring wholesale system replacement.
+This Implementation Guide supports compliance with these conditions, particularly:
 
-2. **MITA Alignment**: By supporting MITA business processes and information architecture through direct mapping to MITA provider management processes, alignment with MITA data concepts, and implementation of technical capabilities that advance MITA maturity. This alignment ensures that provider directory implementations contribute to the state's overall MITA advancement and support the broader goals of Medicaid IT transformation.
+1. **Modularity Standard**: By defining discrete FHIR resources that can be implemented independently, enabling states to adopt a modular approach to provider directory implementation where components can be developed, tested, and deployed separately. This modularity supports incremental implementation, allows for component reuse, and facilitates maintenance and updates without requiring wholesale system replacement.
 
-3. **Industry Standards**: By adopting FHIR and aligning with the Da Vinci Plan-Net IG, leveraging established healthcare interoperability standards that have broad industry support and implementation experience. This standards-based approach reduces implementation risk, enhances interoperability with other healthcare systems, and ensures that provider directory implementations remain current with evolving industry practices.
+2. **MITA Condition**: By supporting MITA business processes and information architecture through direct mapping to MITA provider management processes, alignment with MITA data concepts, and implementation of technical capabilities that advance MITA maturity. This alignment ensures that provider directory implementations contribute to the state's overall MITA advancement and support the broader goals of Medicaid IT tra=nsformation.
 
-4. **Leverage**: By building on existing standards and implementations, including the Da Vinci Plan-Net IG, FAST NDH IG, and industry standard code systems, avoiding duplication of effort and benefiting from the collective experience of previous implementations. This leverage approach accelerates implementation, reduces costs, and promotes consistency across the healthcare ecosystem.
+3. **Industry Standards Condition**: By adopting FHIR and aligning with the Da Vinci Plan-Net IG, leveraging established healthcare interoperability standards that have broad industry support and implementation experience. This standards-based approach reduces implementation risk, enhances interoperability with other healthcare systems, and ensures that provider directory implementations remain current with evolving industry practices.
 
-5. **Business Results**: By enabling improved provider directory accuracy and accessibility that delivers tangible benefits to Medicaid beneficiaries, providers, and administrators, including enhanced ability for beneficiaries to find appropriate providers, reduced administrative burden for providers maintaining their information, and improved program oversight for Medicaid agencies.
+4. **Leverage Condition**: By building on existing standards and implementations, including the Da Vinci Plan-Net IG, FAST NDH IG, and industry standard code systems, avoiding duplication of effort and benefiting from the collective experience of previous implementations. This leverage approach accelerates implementation, reduces costs, and promotes consistency across the healthcare ecosystem.
 
-6. **Interoperability**: By defining standard APIs for provider directory information based on FHIR RESTful interfaces, search parameters, and standardized resource profiles that enable seamless information exchange between systems. This interoperability supports integration with other Medicaid systems, health information exchanges, provider systems, and consumer applications.
+5. **Business Results Condition**: By enabling improved provider directory accuracy and accessibility that delivers tangible benefits to Medicaid beneficiaries, providers, and administrators, including enhanced ability for beneficiaries to find appropriate providers, reduced administrative burden for providers maintaining their information, and improved program oversight for Medicaid agencies.
 
-7. **Flexibility**: By supporting various implementation approaches while maintaining standards compliance, allowing states to implement provider directory capabilities in ways that accommodate their unique organizational structures, technical environments, and policy requirements while still achieving interoperability and standards alignment.
+6. **Interoperability Condition**: By defining standard APIs for provider directory information based on FHIR RESTful interfaces, search parameters, and standardized resource profiles that enable seamless information exchange between systems. This interoperability supports integration with other Medicaid systems, health information exchanges, provider systems, and consumer applications.
+
+7. **Mitigation Plan Condition**: By providing implementation guidance that helps states identify and address potential risks in provider directory implementation, including data quality challenges, integration complexities, and operational considerations, ensuring that states can develop effective mitigation strategies for successful implementation.
+
+8. **Key Personnel Condition**: By defining the technical capabilities and domain knowledge required for successful implementation, helping states identify the key personnel needed for provider directory projects, including FHIR expertise, healthcare data management skills, and Medicaid program knowledge.
+
+9. **Documentation Condition**: By providing comprehensive documentation of profiles, extensions, value sets, and implementation patterns, ensuring that states have the information needed to implement, maintain, and operate standards-based provider directories that meet Medicaid requirements.
+
+10. **Minimization of Custom Development**: By leveraging existing FHIR standards and implementation guides, minimizing the need for custom development and proprietary solutions, ensuring that provider directory implementations are based on widely adopted standards that can be supported by multiple vendors and technology platforms.
+
+The remaining conditions address project management, reporting, testing, operations, and other aspects of MES implementation that are beyond the scope of this Implementation Guide but are essential for states to consider in their overall approach to provider directory implementation.
 
 ### References
 
