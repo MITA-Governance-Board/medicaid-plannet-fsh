@@ -165,6 +165,7 @@ Title: "Example Medicaid Practitioner Role"
 Description: "Example of a practitioner role in a Medicaid organization"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-practitioner-role"
+* meta.lastUpdated = "2025-05-02T12:00:00Z"
 * active = true
 * practitioner = Reference(MedicaidPractitionerExample1)
 * organization = Reference(MedicaidOrganizationExample1)
@@ -199,6 +200,7 @@ Title: "Example Medicaid Provider Location"
 Description: "Example of a location where Medicaid services are provided"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/medicaid-plannet/StructureDefinition/medicaid-location"
+* meta.lastUpdated = "2025-05-02T12:00:00Z"
 * status = #active
 * name = "Anytown Medical Group - Main Office"
 * description = "Main office of Anytown Medical Group"

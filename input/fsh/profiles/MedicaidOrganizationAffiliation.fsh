@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Organization Affiliation
 
 Profile: MedicaidOrganizationAffiliation
-Parent: OrganizationAffiliation
+Parent: PlannetOrganizationAffiliation
 Id: medicaid-organization-affiliation
 Title: "Medicaid Organization Affiliation"
 Description: "Profile for an organization affiliation in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."
@@ -15,9 +15,6 @@ Description: "Profile for an organization affiliation in a Medicaid provider dir
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 
-// Require active status
-* active 1..1
-
 // Require organization reference
 * organization 1..1
 * organization only Reference(MedicaidOrganization)
@@ -26,29 +23,19 @@ Description: "Profile for an organization affiliation in a Medicaid provider dir
 * participatingOrganization 1..1
 * participatingOrganization only Reference(MedicaidOrganization)
 
-// Require network reference
-* network 0..*
 * network only Reference(MedicaidNetwork)
 
 // Require code
 * code 1..*
 
-// Require specialty
-* specialty 0..*
-
-// Require location
-* location 0..*
 * location only Reference(MedicaidLocation)
 
-// Require healthcare service
-* healthcareService 0..*
 * healthcareService only Reference(MedicaidHealthcareService)
 
 // Require telecom
 * telecom 0..*
 
-// Require period
-* period 0..1
+// Require period start
 * period.start 1..1
 
 // Add extensions for Medicaid-specific information

@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Endpoint
 
 Profile: MedicaidEndpoint
-Parent: Endpoint
+Parent: PlannetEndpoint
 Id: medicaid-endpoint
 Title: "Medicaid Endpoint"
 Description: "Profile for an electronic service endpoint in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."
@@ -15,21 +15,8 @@ Description: "Profile for an electronic service endpoint in a Medicaid provider 
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 
-// Require status
-* status 1..1
-
-// Require connection type
-* connectionType 1..1
-
 // Require managing organization
-* managingOrganization 0..1
 * managingOrganization only Reference(MedicaidOrganization)
-
-// Require payload type
-* payloadType 1..*
-
-// Require address
-* address 1..1
 
 // Add extensions for Medicaid-specific information
 * extension contains

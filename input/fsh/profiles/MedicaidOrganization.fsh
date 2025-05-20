@@ -28,15 +28,8 @@ Description: "Profile for an organization in a Medicaid provider directory, exte
     MedicaidOwnershipDisclosure named medicaidOwnershipDisclosure 0..1
 
 // Require organization type for Medicaid organizations
-* type 1..*
 * type from MedicaidFacilityTypeVS (extensible)
 
 // Require contact information
 * telecom 1..*
-* address 1..*
 
-// Add NDH-specific elements
-* contact 0..*
-
-// Require active status
-* active 1..1

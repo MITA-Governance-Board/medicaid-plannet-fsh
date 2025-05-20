@@ -19,7 +19,6 @@ Description: "Profile for a network in a Medicaid provider directory, extending 
 * identifier 1..*
 
 // Require network type
-* type 1..1
 * type = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrganizationType#ntwk
 
 // Add Medicaid-specific extensions
@@ -34,6 +33,3 @@ Description: "Profile for a network in a Medicaid provider directory, extending 
 * address 0..*
 
 // No NDH-specific elements for now
-
-// Require active status
-* active 1..1

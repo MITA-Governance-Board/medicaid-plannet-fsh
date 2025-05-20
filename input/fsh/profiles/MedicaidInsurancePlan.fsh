@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Insurance Plan
 
 Profile: MedicaidInsurancePlan
-Parent: InsurancePlan
+Parent: PlannetInsurancePlan
 Id: medicaid-insurance-plan
 Title: "Medicaid Insurance Plan"
 Description: "Profile for a Medicaid insurance plan in a provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."
@@ -15,11 +15,6 @@ Description: "Profile for a Medicaid insurance plan in a provider directory, inc
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 
-// Require status
-* status 1..1
-
-// Require type
-* type 1..*
 * type from MedicaidProgramTypeVS (extensible)
 
 // Require name
@@ -33,12 +28,9 @@ Description: "Profile for a Medicaid insurance plan in a provider directory, inc
 * coverageArea 1..*
 * coverageArea only Reference(MedicaidLocation)
 
-// Require owner organization
-* ownedBy 1..1
 * ownedBy only Reference(MedicaidOrganization)
 
 // Require administrator organization
-* administeredBy 1..1
 * administeredBy only Reference(MedicaidOrganization)
 
 // Require network

@@ -1,6 +1,6 @@
 ### Overview
 
-This Implementation Guide (IG) defines a FHIR-based approach for exchanging Medicaid Provider Directory information in accordance with the Medicaid Information Technology Architecture (MITA) 3.0 specification. It builds upon the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) and the [FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide](http://hl7.org/fhir/us/ndh/STU1/), and adheres to the [CMS Interoperability and Patient Access API Rule](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index).
+This Implementation Guide (IG) defines a FHIR-based approach for exchanging Medicaid Provider Directory information in accordance with the Medicaid Information Technology Architecture (MITA) 4.0 specification. It builds upon the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) and the [FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide](http://hl7.org/fhir/us/ndh/STU1/), and adheres to the [CMS Interoperability and Patient Access API Rule](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index).
 
 The goal of this IG is to standardize how Medicaid provider directory information is exchanged between systems, ensuring that patients, providers, and other stakeholders have access to accurate and up-to-date information about Medicaid providers.
 
@@ -10,7 +10,7 @@ This IG addresses the need for standardized provider directory data exchange in 
 
 1. **Defining FHIR profiles for key provider directory resources** - Creating standardized data structures based on the Da Vinci Plan-Net IG and FAST NDH IG that specify how provider information should be represented in FHIR. These profiles ensure consistent data representation across different Medicaid systems and implementations while maintaining compatibility with broader healthcare interoperability standards.
 
-2. **Aligning with MITA 3.0 business processes and data requirements** - Ensuring that the technical implementation supports the business processes defined in the Medicaid Information Technology Architecture framework, facilitating seamless integration with other Medicaid systems and enabling states to achieve higher MITA maturity levels in their provider management capabilities.
+2. **Aligning with MITA 4.0 business processes and data requirements** - Ensuring that the technical implementation supports the business processes defined in the Medicaid Information Technology Architecture framework, facilitating seamless integration with other Medicaid systems and enabling states to achieve higher MITA maturity levels in their provider management capabilities.
 
 3. **Leveraging industry standard code systems** - Incorporating established healthcare terminology standards (NUCC, CMS Place of Service, HCPCS) alongside Medicaid-specific codes to ensure that provider information is represented using widely recognized coding systems while accommodating Medicaid-specific concepts that may not exist in national standards.
 
@@ -56,7 +56,7 @@ This IG is intended for:
 
 #### Medicaid Information Technology Architecture (MITA)
 
-The Medicaid Information Technology Architecture (MITA) is a CMS initiative that establishes national guidelines for technologies and processes that improve the administration of the Medicaid program. MITA 3.0 includes specific business processes and data requirements related to provider management and provider information exchange.
+The Medicaid Information Technology Architecture (MITA) is a CMS initiative that establishes national guidelines for technologies and processes that improve the administration of the Medicaid program. MITA includes specific business processes and data requirements related to provider management and provider information exchange.
 
 #### Da Vinci Plan-Net
 
@@ -74,7 +74,7 @@ The CMS Interoperability and Patient Access API Rule requires certain payers, in
 
 This IG is organized into the following sections:
 
-1. **Background** - Provides comprehensive context on MITA 3.0 framework, the CMS Interoperability Rule requirements, and related healthcare standards that form the foundation for this implementation guide. This section helps readers understand the regulatory landscape, business drivers, and technical ecosystem in which Medicaid provider directories operate.
+1. **Background** - Provides context on MITA 4.0 framework, the CMS Interoperability Rule requirements, and related healthcare standards that form the foundation for this implementation guide. This section helps readers understand the regulatory landscape, business drivers, and technical ecosystem in which Medicaid provider directories operate.
 
 2. **Specification** - Defines the detailed technical specifications, including FHIR profiles, extensions, and terminology resources that standardize how Medicaid provider directory information is represented. This section includes conformance requirements, data element definitions, and implementation notes for each resource type.
 

@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Healthcare Service
 
 Profile: MedicaidHealthcareService
-Parent: HealthcareService
+Parent: PlannetHealthcareService
 Id: medicaid-healthcare-service
 Title: "Medicaid Healthcare Service"
 Description: "Profile for a healthcare service in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."
@@ -15,21 +15,12 @@ Description: "Profile for a healthcare service in a Medicaid provider directory,
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 
-// Require active status
-* active 1..1
-
 // Require providing organization
 * providedBy 1..1
 * providedBy only Reference(MedicaidOrganization)
 
-// Require category
-* category 1..*
-
 // Require type
 * type 1..*
-
-// Require specialty
-* specialty 0..*
 
 // Require location
 * location 1..*

@@ -1,5 +1,3 @@
-## Provider Directory Resources
-
 ### Overview
 
 This Implementation Guide defines a set of FHIR profiles for representing provider directory information in the Medicaid context. These profiles are based on the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) [1] and the [FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide](http://hl7.org/fhir/us/ndh/STU1/) [2], but have been adapted to meet the specific requirements of Medicaid provider directories as defined in the Medicaid Information Technology Architecture (MITA) 3.0 [3] and the CMS Interoperability and Patient Access API Rule [4].

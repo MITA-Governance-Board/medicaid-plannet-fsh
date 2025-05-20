@@ -30,7 +30,6 @@ Description: "Profile for a practitioner in a Medicaid provider directory, exten
 // Require qualification information for Medicaid practitioners
 * qualification 1..*
 * qualification.identifier 1..*
-* qualification.code 1..1
 * qualification.issuer 1..1
 * qualification.period 1..1
 * qualification.period.start 1..1
@@ -39,9 +38,3 @@ Description: "Profile for a practitioner in a Medicaid provider directory, exten
 // Require contact information
 * telecom 1..*
 * address 1..*
-
-// Add NDH-specific elements
-* communication 0..*
-
-// Require active status
-* active 1..1

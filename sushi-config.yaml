@@ -6,8 +6,8 @@
 id: hl7.fhir.us.medicaid-plannet
 canonical: http://hl7.org/fhir/us/medicaid-plannet
 name: MedicaidPlanNet
-title: "Medicaid Provider Directory Implementation Guide"
-description: "FHIR Implementation Guide for Medicaid Provider Directory functionality based on Da Vinci Plan-Net and FAST NDH"
+title: "Medicaid Plan-Net Implementation Guide"
+description: "FHIR Implementation Guide for Medicaid Plan-Net (provider directory) functionality based on Da Vinci Plan-Net and FAST NDH"
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
@@ -22,8 +22,8 @@ pages:
     title: MITA Implementation Guidance
   cms-interop-rule.md:
     title: CMS Interoperability Rule
-  provider-directory-resources.md:
-    title: Provider Directory Resources
+  medicaid-plannet-resources.md:
+    title: Medicaid Plan-Net Resources
   state-customization.md:
     title: State Customization Framework
   data-quality.md:
@@ -96,11 +96,11 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Background:
-    MITA 3.0 Overview: mita-overview.html
+    MITA Overview: mita-overview.html
     MITA Implementation Guidance: mita-implementation.html
     CMS Interoperability Rule: cms-interop-rule.html
   FHIR Artifacts:
-    Provider Directory Resources: provider-directory-resources.html
+    Medicaid Plan-Net Resources: medicaid-plannet-resources.html
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Terminology: artifacts.html#terminology-value-sets

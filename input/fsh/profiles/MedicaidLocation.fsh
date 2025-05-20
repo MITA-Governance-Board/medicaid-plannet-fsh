@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Location
 
 Profile: MedicaidLocation
-Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
+Parent: PlannetLocation
 Id: medicaid-location
 Title: "Medicaid Location"
 Description: "Profile for a location in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."
@@ -14,12 +14,6 @@ Description: "Profile for a location in a Medicaid provider directory, incorpora
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/fm"
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-
-// Require status
-* status 1..1
-
-// Require name
-* name 1..1
 
 // Require type
 * type 1..*

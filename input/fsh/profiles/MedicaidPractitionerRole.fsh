@@ -2,7 +2,7 @@
 // Profile definition for a Medicaid Practitioner Role
 
 Profile: MedicaidPractitionerRole
-Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
+Parent: PlannetPractitionerRole
 Id: medicaid-practitioner-role
 Title: "Medicaid Practitioner Role"
 Description: "Profile for a practitioner role in a Medicaid provider directory, incorporating elements from the Da Vinci Plan-Net and FAST NDH Implementation Guides."

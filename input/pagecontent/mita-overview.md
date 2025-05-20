@@ -1,3 +1,5 @@
+<i><b>NOTE: This information is based on MITA 3.0, which can be leveraged and updated for MITA 4.0</b></i>
+
 ### Introduction to MITA
 
 The Medicaid Information Technology Architecture (MITA) is a CMS initiative that establishes national guidelines for technologies and processes that improve the administration of the Medicaid program. MITA is intended to foster integrated business and IT transformation across the Medicaid enterprise to improve the administration of the Medicaid program [1].

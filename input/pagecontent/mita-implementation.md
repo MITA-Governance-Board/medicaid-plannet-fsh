@@ -1,3 +1,11 @@
+<table class="colsi">
+   <tr>
+      <td>
+        NOTE: This information is based on MITA 3.0, which can be leveraged and updated for MITA 4.0
+      </td>
+   </tr>
+</table>
+
 ### Overview
 
 This Implementation Guide (IG) provides guidance for implementing provider directory functionality in alignment with the Medicaid Information Technology Architecture (MITA) 3.0 business processes [1]. This guidance is intended to help state Medicaid agencies and their technology partners implement FHIR-based provider directories that support MITA business processes while meeting federal requirements for interoperability [2].
