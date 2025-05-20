@@ -1,7 +1,13 @@
 CodeSystem: MedicaidNetworkTypeCS
 Id: medicaid-network-type-cs
 Title: "Medicaid Network Type Code System"
-Description: "Code system for Medicaid network types."
+Description: "Code system for Medicaid network types.
+
+This code system defines codes for different types of Medicaid networks. Medicaid has various network types that affect provider participation and beneficiary access. This code system allows for clear categorization.
+
+**Rationale**:
+- MITA business process PM08 (Provider Network Management) requires classification of networks
+- The CMS Interoperability Rule requires information about provider network status"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

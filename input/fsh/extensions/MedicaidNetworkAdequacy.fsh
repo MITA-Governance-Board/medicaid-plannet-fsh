@@ -1,7 +1,13 @@
 Extension: MedicaidNetworkAdequacy
 Id: medicaid-network-adequacy
 Title: "Medicaid Network Adequacy"
-Description: "Metrics related to network adequacy requirements for Medicaid networks."
+Description: "Metrics related to network adequacy requirements for Medicaid networks.
+
+This extension captures metrics related to network adequacy requirements. Medicaid managed care plans must meet network adequacy standards. This extension allows for documenting metrics like provider-to-beneficiary ratios, time/distance standards, and appointment availability.
+
+**Rationale**:
+- 42 CFR 438.68 establishes network adequacy standards for Medicaid managed care
+- MITA business process PM08 (Provider Network Management) includes network adequacy assessment"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * extension contains

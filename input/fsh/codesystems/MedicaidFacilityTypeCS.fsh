@@ -1,7 +1,13 @@
 CodeSystem: MedicaidFacilityTypeCS
 Id: medicaid-facility-type-cs
 Title: "Medicaid Facility Type Code System"
-Description: "Code system for Medicaid facility types."
+Description: "Code system for Medicaid facility types.
+
+This code system provides Medicaid-specific codes for categorizing facility types. Medicaid programs may use facility type classifications that differ from standard industry codes. This code system allows for state-specific facility categorization.
+
+**Rationale**:
+- MITA Information Architecture requires classification of facilities by type
+- The concept map MedicaidToCMSFacilityTypeMap demonstrates the need for Medicaid-specific facility type codes"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

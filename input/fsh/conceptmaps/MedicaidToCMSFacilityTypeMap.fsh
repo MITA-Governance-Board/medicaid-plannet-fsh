@@ -1,7 +1,13 @@
 Instance: medicaid-to-cms-facility-type-map
 InstanceOf: ConceptMap
 Title: "Medicaid to CMS Facility Type Concept Map"
-Description: "Mapping between Medicaid facility types and CMS Place of Service codes."
+Description: "Mapping between Medicaid facility types and CMS Place of Service codes.
+
+This mapping enables interoperability between Medicaid-specific facility classifications and nationally recognized place of service codes used by Medicare and other healthcare entities.
+
+**Rationale**:
+- CMS Place of Service Codes are a nationally recognized standard
+- MITA Technical Architecture requires interoperability with other healthcare systems"
 Usage: #definition
 * version = "1.0.0"
 * status = #draft

@@ -1,7 +1,13 @@
 CodeSystem: MedicaidOwnershipTypeCS
 Id: medicaid-ownership-type-cs
 Title: "Medicaid Ownership Type Code System"
-Description: "Code system for Medicaid provider ownership types."
+Description: "Code system for Medicaid provider ownership types.
+
+This code system defines codes for types of ownership. Medicaid requires disclosure of ownership information for program integrity purposes. This code system standardizes the types of ownership that can exist.
+
+**Rationale**:
+- 42 CFR 455.104 requires disclosure of ownership and control information
+- MITA Provider Management business processes include verification of ownership information"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

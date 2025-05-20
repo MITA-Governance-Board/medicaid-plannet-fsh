@@ -1,7 +1,13 @@
 Instance: medicaid-to-nucc-provider-type-map
 InstanceOf: ConceptMap
 Title: "Medicaid to NUCC Provider Type Concept Map"
-Description: "Mapping between Medicaid provider types and NUCC provider taxonomy codes."
+Description: "Mapping between Medicaid provider types and NUCC provider taxonomy codes.
+
+This mapping enables interoperability between Medicaid-specific provider classifications and nationally recognized taxonomy codes used in claims processing and other healthcare transactions.
+
+**Rationale**:
+- NUCC Provider Taxonomy Codes are a nationally recognized standard
+- MITA Technical Architecture requires interoperability with other healthcare systems"
 Usage: #definition
 * version = "1.0.0"
 * status = #draft

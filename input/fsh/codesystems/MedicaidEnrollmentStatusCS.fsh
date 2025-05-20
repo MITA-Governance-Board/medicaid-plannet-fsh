@@ -1,7 +1,13 @@
 CodeSystem: MedicaidEnrollmentStatusCS
 Id: medicaid-enrollment-status-cs
 Title: "Medicaid Enrollment Status Code System"
-Description: "Code system for Medicaid provider enrollment status."
+Description: "Code system for Medicaid provider enrollment status.
+
+This code system defines standardized codes for provider enrollment statuses in Medicaid. A consistent set of enrollment status codes is needed to accurately represent a provider's current standing with Medicaid programs.
+
+**Rationale**:
+- 42 CFR 455.450 establishes screening levels for Medicaid providers
+- MITA business process PM01 (Provider Enrollment) requires tracking enrollment status"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

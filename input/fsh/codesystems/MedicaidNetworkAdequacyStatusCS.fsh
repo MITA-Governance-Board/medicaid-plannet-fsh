@@ -1,7 +1,13 @@
 CodeSystem: MedicaidNetworkAdequacyStatusCS
 Id: medicaid-network-adequacy-status-cs
 Title: "Medicaid Network Adequacy Status Code System"
-Description: "Code system for Medicaid network adequacy status."
+Description: "Code system for Medicaid network adequacy status.
+
+This code system defines codes for representing network adequacy status. Medicaid managed care plans must meet network adequacy standards. This code system provides a standardized way to represent adequacy status.
+
+**Rationale**:
+- 42 CFR 438.68 establishes network adequacy standards for Medicaid managed care
+- MITA business process PM08 (Provider Network Management) includes network adequacy assessment"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

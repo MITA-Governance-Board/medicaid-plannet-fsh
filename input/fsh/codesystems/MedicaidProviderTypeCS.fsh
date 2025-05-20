@@ -1,7 +1,13 @@
 CodeSystem: MedicaidProviderTypeCS
 Id: medicaid-provider-type-cs
 Title: "Medicaid Provider Type Code System"
-Description: "Code system for Medicaid provider types."
+Description: "Code system for Medicaid provider types.
+
+This code system provides Medicaid-specific codes for categorizing provider types. Medicaid programs often use provider type classifications that differ from standard industry codes. This code system allows for state-specific provider categorization.
+
+**Rationale**:
+- MITA Information Architecture requires classification of providers by type
+- The concept map MedicaidToNUCCProviderTypeMap demonstrates the need for Medicaid-specific provider type codes"
 * ^version = "1.0.0"
 * ^experimental = false
 * ^date = "2025-05-06"

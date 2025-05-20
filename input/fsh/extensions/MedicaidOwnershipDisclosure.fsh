@@ -1,7 +1,13 @@
 Extension: MedicaidOwnershipDisclosure
 Id: medicaid-ownership-disclosure
 Title: "Medicaid Ownership Disclosure"
-Description: "Information about the ownership and control of a Medicaid provider organization."
+Description: "Information about the ownership and control of a Medicaid provider organization.
+
+This extension documents ownership relationships and controlling interests as required by federal regulations. Medicaid requires disclosure of ownership information for program integrity purposes. This extension captures details about owners, relationships, and percentages of ownership.
+
+**Rationale**:
+- 42 CFR 455.104 requires disclosure of ownership and control information
+- MITA Provider Management business processes include verification of ownership information"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * extension contains
