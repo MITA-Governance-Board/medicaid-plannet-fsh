@@ -2,7 +2,9 @@
 
 This Implementation Guide (IG) defines a FHIR-based approach for exchanging Medicaid Provider Directory information in accordance with the Medicaid Information Technology Architecture (MITA) 4.0 specification. It builds upon the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/) and the [FAST National Directory of Healthcare Providers & Services (NDH) Implementation Guide](http://hl7.org/fhir/us/ndh/STU1/), and adheres to the [CMS Interoperability and Patient Access API Rule](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index).
 
-The goal of this IG is to standardize how Medicaid provider directory information is exchanged between systems, ensuring that patients, providers, and other stakeholders have access to accurate and up-to-date information about Medicaid providers.
+The goal of this IG is to standardize how Medicaid provider directory information is exchanged **between State Medicaid Agency systems**, ensuring that Medicaid stakeholders have access to accurate and up-to-date information about Medicaid providers.
+
+**Patients** should access the provider directory through the [Da Vinci Plan-Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1/), as recommended by the [CMS Interoperability and Patient Access API Rule](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index).  This Medicaid Plan-Net IG is based heavily on the Da Vinci Plan-Net Implementation Guide, but adds other key information that is important to State Medicaid Agencies.
 
 ### Purpose
 
