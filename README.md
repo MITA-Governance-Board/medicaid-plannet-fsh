@@ -253,6 +253,5 @@ We welcome contributions to improve this Implementation Guide. Here's how to get
 ## Support
 
 ### Getting Help
-### Getting Help
 - **FHIR Community**: [Join the #implementers stream](https://chat.fhir.org/#narrow/stream/179166-implementers)
 
