@@ -17,7 +17,7 @@ The goal of this IG is to standardize how Medicaid provider directory informatio
 This Implementation Guide addresses the critical need for standardized provider directory data exchange in the Medicaid ecosystem by:
 
 - **Defining FHIR profiles for key provider directory resources** - Creating standardized data structures that specify how provider information should be represented in FHIR while maintaining compatibility with broader healthcare interoperability standards
-- **Aligning with MITA 4.0 business processes** - Supporting business processes defined in the Medicaid Information Technology Architecture framework and enabling states to achieve higher MITA maturity levels
+- **Aligning with MITA business processes** - Supporting business processes defined in the Medicaid Information Technology Architecture framework and enabling states to achieve higher MITA maturity levels
 - **Leveraging industry standard code systems** - Incorporating established healthcare terminology standards (NUCC, CMS Place of Service, HCPCS) alongside Medicaid-specific codes
 - **Providing concept maps between standards** - Creating explicit mappings between Medicaid-specific terminology and industry-standard codes
 - **Supporting CMS Interoperability Rule compliance** - Implementing technical requirements for making provider directory information available through standardized APIs
@@ -146,7 +146,7 @@ medicaid-plannet-fsh/
 ### For State Medicaid Agencies
 
 **MITA Alignment**:
-- Supports MITA 4.0 Provider Management business processes (PM01-PM05)
+- Supports MITA Provider Management business processes (PM01-PM05)
 - Enables progression to higher MITA maturity levels
 - Facilitates standardized data exchange with federal systems
 
