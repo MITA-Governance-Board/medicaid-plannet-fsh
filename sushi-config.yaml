@@ -32,6 +32,8 @@ pages:
     title: Security and Privacy Considerations
   versioning-strategy.md:
     title: Versioning Strategy
+  tmsis-mapping.md:
+    title: TMSIS to FHIR Mapping
   transition-strategy.md:
     title: Transition Strategy
   transition-principles.md:
@@ -109,6 +111,7 @@ menu:
     Data Quality Framework: data-quality.html
     Security and Privacy Considerations: security-privacy.html
     Versioning Strategy: versioning-strategy.html
+    TMSIS to FHIR Mapping: tmsis-mapping.html
     Transition Strategy: transition-strategy.html
     Testing Framework: testing-framework.html
   Examples: examples.html
